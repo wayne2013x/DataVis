@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>环保数据分析系统</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_878267_p47lv57d5df.css">
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/environPage.css">   
+</head>
+<body>
+     <!-- 溯源模型 -->
+    <div class="suyuanmoxingNavCont">
+            <!-- 左侧 -->
+            <div class="suyuanmoxingLeftbar pa">
+                <div class="zhiwenTitle">
+                    <i class="iconfont icon-xingxing"></i>
+                    <span>敏感点列表</span>
+                    <!-- <i class="iconfont icon-add2" onclick="openTanchu('zhiwenAddcont')"></i> -->
+                </div>
+                <div class="scrolldiv leftbarCont">
+                    <ol id="suyuanmoxingList">
+                        <!-- 
+                            <li class="active"><p>振业峦山谷</p><span class="data">2018-11-24</span></li>
+                            <li><p>振业峦山谷</p><span class="data">2018-11-24</span></li>
+                         -->
+                    </ol>        
+                </div>    
+            </div>
+            <!-- 左侧 end -->
+
+            <!-- 右侧div  -->
+            <div class="suyuanmoxingRightBar pa">
+                <div class="listTitle">
+                    <i class="iconfont icon-wuranyuanguanli"></i>
+                    <span>污染源列表</span>
+                    <input type="button" class="savebtn" value="保存" id="suyuanmoxing_rightbarSaveBtn">
+                </div>
+                <!-- 标题 -->
+                <div class="tableTitle tablebox">
+                    <table border="1">
+                        <tr>
+                            <td class="td1">选择</td>
+                            <td class="td2">企业名称</td>
+                            <td class="td3">行业类型</td>
+                            <td class="td4">企业规模</td>
+                            <td class="td5">企业地址</td>
+                            <td class="td6">主要产品</td>
+                            <td class="td7">原辅材料</td>
+                            <td class="td8">气味特点</td>
+                            <td class="td9">距离(Km)</td>
+                            <td class="td10">详情</td>
+                            
+                        </tr>
+                    </table>
+                </div>
+                <!-- 内容 -->
+                <div class="tableContent tablebox scrolldiv">
+                    <table border="1" id="wuranyuanList_onsuyuanmoxing">
+                        <!-- <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2"><p>联泰欣公司喷涂车间</p></td>
+                            <td class="td3"><p>喷涂行业</p></td>
+                            <td class="td4"><p>小型</p></td>
+                            <td class="td5"><p>深圳市坪山区江岭路6号</p></td>
+                            <td class="td6"><p>-</p></td>
+                            <td class="td7"><p>-</p></td>
+                            <td class="td8"><p>有强烈油漆味</p></td>
+                            <td class="td9"><p>0.8</p></td>
+                            <td class="td10"><i class="iconfont icon-info"></i></td>
+                        </tr> -->
+                       
+                        
+                                            
+                    </table>
+                </div>
+            </div>
+            <!-- 右侧div end -->
+    </div>
+    <!-- 溯源模型 end-->
+
+    <!-- 保存弹出层 -->
+    <div class="tanchucontainer saveCont" id="saveCont2">
+            <div class="tanchuTitle">保存信息<span class="closebtn" onclick="closeTanchu()"><i class="iconfont icon-guanbi"></i></span></div>    
+            <div class="tanchuContent">
+                保存成功！
+
+                <button id='closeSavebtn' class="minbtn mt30" onclick="closeTanchu()">关闭</button>
+            </div>
+    </div>
+    <!-- 保存弹出层 end-->
+
+    <!-- 弹出层-污染源 -->
+    <div class="tanchucontainer wuranyuanAddcont" id="wuranyuanShowcont">
+        <div class="tanchuTitle">污染源<span class="closebtn" onclick="closeTanchu()"><i class="iconfont icon-guanbi"></i></span></div>    
+        <div class="tanchuContent">
+                <ul class="tabTitle clearfix">
+                    <li class="on">基本信息</li>
+                    <li>排放信息</li>
+                    <li>指纹信息</li>
+                </ul>
+                <div class="tabContent">
+                    <!-- 基本信息 -->
+                    <div class="tabcont-min" style="display:block;">
+                        <table>
+                            <tr>
+                                <td class="td1">污染源名称：</td>
+                                <td class="td2">
+                                    <input type="text" name=""  placeholder="污染源名称" class="ipt_long1" readonly value="通聚水务科技发展有限公司">
+                                </td> 
+                                <td class="td3">坐标经度：</td>                               
+                                <td class="td4"><p class="pr zuobiaobox"><input type="text" value="114.299261" class="ipt_long2">&nbsp;&nbsp;-&nbsp;&nbsp;<input type="text" value="22.704214"  class="ipt_long2"></p></td>
+                            </tr> 
+                            <tr>
+                                <td class="td1">企业地址：</td>
+                                <td colspan="3">
+                                    <input type="text" value="深圳武清区开发区泉达路19号" placeholder="企业地址" class="ipt_long3">
+                                </td>                                
+                            </tr> 
+                            <tr>
+                                <td class="td1">行业类别：</td>
+                                <td>
+                                    <select class="ipt_long1" disabled="true">
+                                        <option selected>政府</option>
+                                        <option>企业</option>
+                                    </select>
+                                </td>
+                                <td class="td3">行业代码：</td>
+                                <td>
+                                    <input type="text" name="100203" placeholder="行业代码" class="ipt_long4" readonly value="3839303">
+                                </td>                                
+                            </tr> 
+                            <tr>
+                                <td class="td1">组织机构代码：</td>
+                                <td>
+                                    <input type="text" name="" value="399404-22" placeholder="行业代码" class="ipt_long1">                                
+                                </td>
+                                <td class="td3">企业规模：</td>
+                                <td>
+                                    <select class="ipt_long4" disabled="true">
+                                            <option>政府</option>
+                                            <option>企业</option>
+                                    </select>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td class="td1">主要产品：</td>
+                                <td>
+                                    <input type="text" name="" placeholder="主要产品" class="ipt_long1" value="塑料包包" readonly>                                
+                                </td>
+                                <td class="td3">原辅材料：</td>
+                                <td>
+                                    <input type="text" name="" placeholder="原辅材料" class="ipt_long4" value="氨气" readonly>  
+                                </td>                             
+                            </tr> 
+                            <tr>
+                                <td class="td1">生产工艺：</td>
+                                <td>
+                                    <input type="text" name="" placeholder="生产工艺" class="ipt_long1" value="进口工艺" readonly>                                
+                                </td>
+                                <td class="td3">年生产时间：</td>
+                                <td>
+                                    <input type="text" name="" placeholder="年生产时间" class="ipt_long4" value="2016-8"  readonly>  
+                                </td>                             
+                            </tr> 
+                            <tr>
+                                <td class="td1">企业联系人：</td>
+                                <td>
+                                    <input type="text" name="" placeholder="企业联系人" class="ipt_long1" value="桑耀德" readonly>                                
+                                </td>
+                                <td class="td3">联系人电话：</td>
+                                <td>
+                                    <input type="text" name="" placeholder="联系人电话" class="ipt_long4" value="1337948492" readonly>  
+                                </td>                             
+                            </tr> 
+                            <tr>
+                                <td class="td1">气味特点：</td>
+                                <td colspan="3">
+                                    <input type="text" placeholder="气味特点" class="ipt_long3" value="有的刺鼻味；臭鸡蛋味en的类似烂洋葱或烂洋白菜味等。使人呼吸不畅，恶心呕吐。" readonly>
+                                </td>                                
+                            </tr>                                                                          
+                        </table>
+                    </div>
+                    <div class="tabcont-min" style="display:none;">
+                        <table>
+                            <tr>
+                                <td class="td1">污染源类型：</td>
+                                <td class="td2" colspan="3">
+                                    <select class="ipt_long1" disabled="true">
+                                        <option>有组织排放</option>
+                                        <option selected>无组织排放</option>
+                                    </select>
+                                </td>                                 
+                            </tr> 
+                            <tr>
+                                <td class="td1">排口编号：</td>
+                                <td class="td2">
+                                    <input type="text" placeholder="" class="ipt_long1" value="373748429" readonly>
+                                </td> 
+                                <td class="td3">排口名称：</td>
+                                <td class="td4">
+                                    <input type="text"  placeholder="" class="ipt_long4" value="3389101" readonly>
+                                </td>                                
+                            </tr>
+                            <tr>
+                                <td class="td1">排口高度：</td>
+                                <td class="td2">
+                                    <p class="pr"><input type="text" value="30" readonly placeholder="" class="ipt_long1 pr50"><span class="pa danwei">m</span></p>
+                                </td> 
+                                <td class="td3">排口内径：</td>
+                                <td class="td4">
+                                    <p class="pr"><input type="text" value="20" readonly placeholder="" class="ipt_long4 pr50"><span class="pa danwei">m</span></p>
+                                </td>                                
+                            </tr>
+                            <tr>
+                                <td class="td1">排气量：</td>
+                                <td class="td2">
+                                    <p class="pr"><input type="text" value="10" readonly  placeholder="" class="ipt_long1 pr50"><span class="pa danwei">m³/h</span></p>
+                                </td> 
+                                <td class="td3">排放速率：</td>
+                                <td class="td4">
+                                    <p class="pr"><input type="text" value="30" readonly placeholder="" class="ipt_long4 pr50"><span class="pa danwei">m/h</span></p>
+                                </td>                                
+                            </tr>
+                            <tr>
+                                <td class="td1">治理技术：</td>
+                                <td class="td2">
+                                    <input type="text" value="化学治理" readonly placeholder="" class="ipt_long1">
+                                </td> 
+                                <td class="td3">TVOC浓度：</td>
+                                <td class="td4">
+                                    <p class="pr"><input type="text" value="22" readonly placeholder="" class="ipt_long4  pr50"><span class="pa danwei">mg/m³</span></p>
+                                </td>                                
+                            </tr>
+                                
+                                                                                                    
+                        </table>
+                    </div>
+                    <div class="tabcont-min" style="display:none;">
+                        <div class="clearfix zhiwenbox">
+                            <div class="leftbar barbox">
+                                <h3>污染物信息：</h3>
+                                <div class="leftbarCont scrolldiv">
+                                    <ul>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸丁酯</p><span>44.44</span></li>
+                                        <li><p>4-甲基-2</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯乙酸乙酯乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                        <li><p>乙酸乙酯</p><span>99.03</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rightbar">
+                                <h3>指纹信息：</h3>
+                                <div class="rightbarCont" id="echartsbox_detail">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button  class="minbtn" onclick="closeTanchu()">关闭</button>
+        </div>
+    </div>
+    <!-- 弹出层-添加繁盛点 end -->    
+
+
+    <!-- 四周框架 -->
+    <div class="borderwarp pr">
+        <h1 class="pfix"><img src="images/logo.png" style="height: 50px;"><span>环保数据分析系统</span></h1>
+        <ul class="nav pfix">
+            <li><a href="index.html">数据溯源</a></li>
+            <li><a href="mingandian.html">企业视图</a></li>
+            <li><a href="wuranyuan.html">历史数据</a></li>
+            <li><a href="zhiwentupu.html">监管系数</a></li>
+            <li class="on"><a href="suyuanmoxing.html">设备模型</a></li>
+        </ul>
+        <span class="pfix ren"><i class="iconfont icon-geren"></i></span>
+        <div class="bg pfix jiaoNav"></div>
+        <div class="bg pfix jiaoRight"></div>
+        <div class="pfix jiao1"></div>
+        <div class="pfix jiao2"></div>        
+        <div class="bg pfix mk1"></div>
+        <div class="bg pfix mk2"><div class="pa jiao3"></div></div>
+        <div class="bg pfix lineTop"></div>
+        <div class="bg pfix lineBottom"></div>
+        <div class="bg pfix lineLeft"></div>
+        <div class="bg pfix lineRight"></div>        
+    </div>
+    <!-- 四周框架end -->
+
+    <!-- 弹出层遮罩 -->
+    <div class="coverbg"></div>
+
+    
+
+
+   
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/data_echarts.js"></script>
+    <script src="js/data_mingandian.js"></script>
+    <script src="js/data_wuranwuyuan.js"></script>
+    <script src="js/nav_common.js"></script>
+
+    <!-- 溯源模型的js -->
+    <script src="js/nav5_suyuanmoxing.js"></script>
+
+
+</body>
+</html>

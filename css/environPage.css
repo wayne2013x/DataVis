@@ -1,0 +1,2264 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 12px
+}
+
+.pr {
+    position: relative
+}
+
+.pa {
+    position: absolute
+}
+
+.pfix {
+    position: fixed
+}
+
+.w100 {
+    width: 100%
+}
+
+.h100 {
+    height: 100vh
+}
+
+.w49 {
+    width: 49%
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.divHide {
+    visibility: hidden
+}
+
+.divshow {
+    visibility: visible
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.none {
+    display: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0
+}
+
+.limit1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1
+}
+
+.limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.limit3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+
+.mCSB_scrollTools {
+    width: 8px
+}
+
+body {
+    font-family: '微软雅黑'
+}
+
+body {
+    min-width: 1024px;
+    margin: 0 auto
+}
+
+.borderwarp {
+    z-index: 10000
+}
+
+.borderwarp .bg {
+    background: #062e5a
+}
+
+.borderwarp .lineTop {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+.borderwarp .lineBottom {
+    height: 23px;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.borderwarp .lineLeft {
+    width: 18px;
+    top: 51px;
+    bottom: 23px;
+    left: 0
+}
+
+.borderwarp .lineRight {
+    width: 18px;
+    top: 58px;
+    bottom: 23px;
+    right: 0
+}
+
+.borderwarp .jiao1 {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #062e5a;
+    bottom: 3px;
+    right: 13px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg)
+}
+
+.borderwarp .jiao2 {
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 19px solid #062e5a;
+    top: 19px;
+    right: 49px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg)
+}
+
+.borderwarp .jiao3 {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #062e5a;
+    top: -15px;
+    right: -12px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg)
+}
+
+.borderwarp .mk1 {
+    width: 52px;
+    height: 23px;
+    top: 35px;
+    right: 0
+}
+
+.borderwarp .mk2 {
+    width: 50%;
+    height: 16px;
+    top: 35px;
+    left: 0
+}
+
+.borderwarp h1 {
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    padding-left: 19px
+}
+
+.borderwarp h1 img {
+    vertical-align: top
+}
+
+.borderwarp h1 span {
+    vertical-align: bottom;
+    margin-left: 13px;
+    font-weight: bold;
+    color: #eee;
+    font-family: '微软雅黑'
+}
+
+.borderwarp .nav {
+    z-index: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    right: 51%
+}
+
+.borderwarp .nav li {
+    float: left;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 14px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.borderwarp .nav li a {
+    color: #7a94af
+}
+
+.borderwarp .nav li.on a {
+    color: #eee
+}
+
+.borderwarp .ren {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2
+}
+
+.borderwarp .ren i {
+    color: #fff;
+    font-size: 30px
+}
+
+.indexLeftBar {
+    left: 37px;
+    top: 68px;
+    bottom: 31px;
+    width: 21.875%
+}
+
+.indexRightBar {
+    right: 37px;
+    top: 68px;
+    bottom: 31px;
+    width: 21.875%
+}
+
+.indexBottomBar {
+    left: 25%;
+    right: 25%;
+    bottom: 31px;
+    height: 294px
+}
+
+.mkbox {
+    height: calc((100vh - 123px)/3);
+    margin-bottom: 10px;
+    background: rgba(4, 38, 71, 0.9);
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.mkbox.qiejiao {
+    background: linear-gradient(-50deg, transparent 15px, rgba(9, 39, 73, 0.9) 0)
+}
+
+.mkbox.qiejiao_down_45 {
+    background: linear-gradient(-45deg, transparent 15px, rgba(9, 39, 73, 0.9) 0)
+}
+
+.mkbox.qiejiao_up {
+    background: linear-gradient(-135deg, transparent 15px, rgba(9, 39, 73, 0.9) 0)
+}
+
+.mkbox.borderTopLeftRadius {
+    border-top-left-radius: 20px
+}
+
+.mkbox.palb {
+    left: 0;
+    bottom: -8px;
+    min-height: calc(100vh * 0.312)
+}
+
+.mkbox.parb {
+    right: 0;
+    bottom: -8px;
+    min-height: calc(100vh * 0.312)
+}
+
+.mkbox .mkTitle_so {
+    text-align: center;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    overflow: hidden
+}
+
+.mkbox .mkTitle_so .icon-so {
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon_so.png) no-repeat;
+    background-size: cover;
+    display: block;
+    float: left;
+    margin: 12px 0 0 20px
+}
+
+.mkbox .mkTitle_so .ipt {
+    float: left;
+    width: calc(100% - 70px);
+    height: 26px;
+    line-height: 26px;
+    margin: 8px 0 0 8px;
+    background: none;
+    border: none;
+    transition: .5s all;
+    color: #fff
+}
+
+.mkbox .mkTitle_so .ipt:focus {
+    border-bottom: 1px solid rgba(139, 195, 252, 0.8)
+}
+
+.mkbox .mkTitle_so .btn {
+    float: left;
+    font-size: 12px;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    background: #00a0e9;
+    padding: 0;
+    outline: none;
+    color: #fff;
+    margin: 10px 0 0 10px
+}
+
+.mkbox .mkTitle_jiao {
+    height: 40px;
+    background: #1a334e;
+    display: inline-block;
+    color: #fff;
+    padding: 0 70px 0 20px;
+    line-height: 40px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: linear-gradient(-45deg, transparent 40px, #162e48 0)
+}
+
+.mkbox .mkTitle_center {
+    text-align: center;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff
+}
+
+.mkbox .mkTitle_left {
+    text-align: left;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    text-indent: 20px
+}
+
+.mkbox .time {
+    position: absolute;
+    height: 40px;
+    line-height: 50px;
+    top: 0;
+    right: 15px;
+    color: #b9c4d4
+}
+
+.mkbox .echartSelect {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2
+}
+
+.mkbox .echartSelect h3 {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: normal;
+    white-space: nowrap
+}
+
+.mkbox .echartSelect h3 span {
+    padding-left: 10px;
+    display: inline-block;
+    min-width: 60px;
+    text-align: right
+}
+
+.mkbox .echartSelect h3 i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+    transition: .5s all
+}
+
+.mkbox .echartSelect ul {
+    background: #fff;
+    padding: 0;
+    display: none;
+    border-radius: 3px;
+    overflow: hidden
+}
+
+.mkbox .echartSelect ul li {
+    color: #333;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 5px;
+    overflow: hidden
+}
+
+.mkbox .echartSelect ul li:nth-last-child(1) {
+    padding-bottom: 5px
+}
+
+.mkbox .echartSelect ul li:hover {
+    background: #00a0e9;
+    color: #fff
+}
+
+.mkbox .echartSelect:hover h3 i {
+    transform: rotate(180deg)
+}
+
+.mkbox .echartSelect:hover ul {
+    display: block
+}
+
+.mkbox .mkContent {
+    overflow: hidden;
+    color: #b9c4d4
+}
+
+.mkbox .mkContent .divstylebox {
+    padding-top: 5px
+}
+
+.mkbox .mkContent .divstylebox .divstyle {
+    float: left;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.mkbox .mkContent .divstylebox .divstyle:nth-child(1) {
+    width: 60%;
+    padding-left: 14px
+}
+
+.mkbox .mkContent .divstylebox .divstyle:nth-child(2) {
+    width: 30%;
+    float: right;
+    margin-right: 5%
+}
+
+.mkbox .mkContent .divstylebox .divstyle h4 {
+    text-align: left;
+    margin: 0
+}
+
+.mkbox .mkContent .divstylebox .divstyle h5 {
+    font-size: 92px;
+    line-height: 1em;
+    margin: 0;
+    text-align: center
+}
+
+.mkbox .mkContent .divstylebox .divstyle .qiangdu {
+    height: 20px;
+    background: #dc9418;
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 12px;
+    border-radius: 20px
+}
+
+.mkbox .mkContent .divstylebox .divstyle ul {
+    margin-top: 10px;
+    padding-right: 20px
+}
+
+.mkbox .mkContent .divstylebox .divstyle ul li {
+    text-align: left;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative
+}
+
+.mkbox .mkContent .divstylebox .divstyle ul li p {
+    margin-right: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.mkbox .mkContent .divstylebox .divstyle ul li span {
+    top: 0;
+    right: 0;
+    position: absolute
+}
+
+.mkbox .mkContent .everDescribe {
+    margin-top: 3%;
+    padding: 8px 15px
+}
+
+.mkbox .mkContent .everDescribe h3 {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.mkbox .mkContent .everDescribe p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 5px
+}
+
+.mkbox .cont-table {
+    height: calc(100% - 18px);
+    overflow: auto
+}
+
+.mkbox .tablebox {
+    width: 100%
+}
+
+.mkbox .tablebox th,
+.mkbox .tablebox td {
+    font-weight: normal;
+    height: 30px;
+    border: 1px solid #2f4e6d;
+    border-collapse: collapse;
+    padding: 3px 0;
+    text-align: center;
+    overflow: hidden
+}
+
+.mkbox .tablebox th {
+    font-size: 14px
+}
+
+.mkbox .tablebox td {
+    font-size: 12px
+}
+
+.mkbox .tablebox .bluebg td {
+    background: #00a0e9 !important;
+    color: #fff
+}
+
+.mkbox.mkbox_big {
+    height: calc((100vh - 100px))
+}
+
+.mkbox.mkbox_big .mkContent {
+    overflow: auto
+}
+
+.minganBox .tablebox th,
+.minganBox .tablebox td {
+    box-sizing: border-box
+}
+
+.minganBox .tablebox .data {
+    width: 120px;
+    font-size: 10px
+}
+
+.minganBox .tablebox .date {
+    width: 83px
+}
+
+.minganBox .tablebox .name {
+    width: 100px
+}
+
+.minganBox .tablebox .name p {
+    text-align: center;
+    padding: 2px 5px;
+    cursor: pointer
+}
+
+.minganBox .tablebox .describe p {
+    text-align: center;
+    padding: 2px 5px;
+    width: 150px;
+}
+
+.minganAddBox .mkTitle_center {
+    border-bottom: 1px solid #234062
+}
+
+.minganAddBox .mkTitle_center .icon-add {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer
+}
+
+.minganAddBox li {
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    color: #b9c4d4;
+    font-size: 13px;
+    padding: 0 23px;
+    border-bottom: 1px solid #1c3c61;
+    transition: .5s all;
+    cursor: pointer
+}
+
+.minganAddBox li i {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 10px
+}
+
+.minganAddBox li span {
+    vertical-align: middle
+}
+
+.minganAddBox li span.cont {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 60%
+}
+
+.minganAddBox li span.data {
+    float: right;
+    font-size: 10px
+}
+
+.minganAddBox li:hover {
+    background: rgba(0, 160, 233, 0.5)
+}
+
+.minganAddBox li.active {
+    background: #00a0e9
+}
+
+.wuranyuanBox {
+    background: url(../images/wuranyuanbg.png) no-repeat bottom left;
+    background-size: cover;
+    border: 0;
+    color: #fff;
+    overflow: hidden
+}
+
+.wuranyuanBox .wrtitle {
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px #083c70
+}
+
+.wuranyuanBox .wrtitle span {
+    font-size: 12px
+}
+
+.wuranyuanBox .wrtitle span.edit {
+    cursor: pointer
+}
+
+.wuranyuanBox .textCont .pic {
+    width: 77px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 27px;
+    font-size: 0
+}
+
+.wuranyuanBox .textCont .pic img {
+    max-width: 77px;
+    max-height: 70px
+}
+
+.wuranyuanBox .xiangsidu {
+    margin-top: 5px;
+    margin-left: 26px
+}
+
+.wuranyuanBox .xiangsidu i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #e77541;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center
+}
+
+.wuranyuanBox .xiangsidu span {
+    vertical-align: middle;
+    margin-left: 10px
+}
+
+.wuranyuanBox .textdl {
+    padding-left: 100px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 20px
+}
+
+.wuranyuanBox .textdl p {
+    position: relative;
+    line-height: 20px;
+    margin-top: 2px;
+    text-shadow: 1px 1px 2px #083c70
+}
+
+.wuranyuanBox .textdl p b {
+    position: absolute;
+    left: -90px;
+    top: 0;
+    width: 75px;
+    text-align: right
+}
+
+.wuranyuanBox .line {
+    height: 1px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 15px 10px
+}
+
+.wuranwuBox .tablebox {
+    width: 100%
+}
+
+.wuranwuBox .tablebox .td1 {
+    width: 25%
+}
+
+.wuranwuBox .tablebox .td2 {
+    width: 25%
+}
+
+.historyBox {
+    margin: 5px 14px;
+    background: #0f2d47;
+    min-height: 74px;
+    max-height: 120px;
+    height: 100px;
+    overflow: hidden;
+    position: relative
+}
+
+.historyBox:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 5px
+}
+
+.historyBox .hleft {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%)
+}
+
+.historyBox .hleft img {
+    width: 35px;
+    display: block;
+    margin: 0 auto
+}
+
+.historyBox .hleft p {
+    height: 27px;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px
+}
+
+.historyBox .hright {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    right: 15px
+}
+
+.historyBox .hright p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    margin: 5px 0
+}
+
+.historyBox .hright span {
+    color: #fff;
+    margin-right: 21px
+}
+
+.historyBox .hright span::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 21px;
+    background: #fff;
+    margin-right: 21px;
+    vertical-align: middle
+}
+
+.historyBox .hright span.lineRed::before {
+    background: #fb0101
+}
+
+.historyBox .hright span.lineBlue::before {
+    background: #00a0e9
+}
+
+.historyBox .hright span.lineYellow::before {
+    background: #f29b76
+}
+
+.progress {
+    height: 19px;
+    background: #262626;
+    padding: 2px;
+    overflow: visible;
+    border-radius: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #7992a8;
+    margin: 8% 20px 0;
+    position: relative;
+    font-size: 15px
+}
+
+.progress .progress-bar {
+    border-radius: 20px;
+    height: 14px;
+    position: relative;
+    animation: animate-positive 2s;
+    cursor: pointer
+}
+
+.progress .progress-per {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: -22px;
+    right: 10px;
+    cursor: pointer
+}
+
+.progress .progress-text {
+    position: absolute;
+    top: -34px;
+    left: 0;
+    cursor: pointer
+}
+
+.progress .progress-text span {
+    vertical-align: middle
+}
+
+.progress .progress-text img {
+    margin-right: 3px;
+    vertical-align: middle
+}
+
+.progress.grade i {
+    font-size: 18px
+}
+
+.progress.grade.grade1 .progress-bar {
+    background: #ff2943
+}
+
+.progress.grade.grade1 i {
+    color: #ff2943;
+    text-shadow: 0 0 5px #ff2943
+}
+
+.progress.grade.grade2 .progress-bar {
+    background: #f00
+}
+
+.progress.grade.grade2 i {
+    color: #f00;
+    text-shadow: 0 0 5px #f00
+}
+
+.progress.grade.grade3 .progress-bar {
+    background: #dc9418
+}
+
+.progress.grade.grade3 i {
+    color: #dc9418;
+    text-shadow: 0 0 5px #dc9418
+}
+
+.progress.grade.grade4 .progress-bar {
+    background: #dbed84
+}
+
+.progress.grade.grade4 i {
+    color: #dbed84;
+    text-shadow: 0 0 5px #dbed84
+}
+
+.progress.grade.grade5 .progress-bar {
+    background: #66bb56
+}
+
+.progress.grade.grade5 i {
+    color: #66bb56;
+    text-shadow: 0 0 5px #66bb56
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0
+    }
+}
+
+.wuxingbox,
+.rightXingbox {
+    width: 140px;
+    min-height: 200px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    position: fixed;
+    background: rgba(4, 38, 71, 0.9);
+    display: none
+}
+
+.wuxingbox.wuxingpos,
+.rightXingbox.wuxingpos {
+    left: 25%
+}
+
+.wuxingbox.rightXingPos,
+.rightXingbox.rightXingPos {
+    min-height: 98px;
+    right: 24.5%;
+    bottom: 35px;
+    border-radius: 5px;
+    display: block
+}
+
+.wuxingbox.qiejiao,
+.rightXingbox.qiejiao {
+    background: linear-gradient(-50deg, transparent 15px, rgba(9, 39, 73, 0.9) 0)
+}
+
+.wuxingbox.qiejiao_down_45,
+.rightXingbox.qiejiao_down_45 {
+    background: linear-gradient(-45deg, transparent 15px, rgba(9, 39, 73, 0.9) 0)
+}
+
+.wuxingbox.qiejiao_up,
+.rightXingbox.qiejiao_up {
+    background: linear-gradient(-135deg, transparent 15px, rgba(9, 39, 73, 0.9) 0)
+}
+
+.wuxingbox ul,
+.rightXingbox ul {
+    padding-top: 10px
+}
+
+.wuxingbox li,
+.rightXingbox li {
+    height: 36px
+}
+
+.wuxingbox img,
+.rightXingbox img {
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+.wuxingbox span,
+.rightXingbox span {
+    vertical-align: middle
+}
+
+.floatDiv {
+    position: fixed;
+    top: 70px;
+    right: 480px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #8b9aad;
+    background: #273649;
+    line-height: 33px;
+    text-align: center
+}
+
+.floatDiv li {
+    float: left;
+    cursor: pointer;
+    padding: 0 25px;
+    transition: .3s all
+}
+
+.floatDiv li:nth-child(1) {
+    border-right: 1px solid #8b9aad
+}
+
+.floatDiv li.active {
+    background: #00a0e9
+}
+
+.coverbg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 10001;
+    display: none
+}
+
+.tanchucontainer {
+    display: none;
+    position: fixed;
+    background: #052647;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10002;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0
+}
+
+.tanchucontainer .tanchuContent {
+    padding-top: 10px
+}
+
+.tanchucontainer .tanchuTitle {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    position: relative
+}
+
+.tanchucontainer .tanchuTitle .closebtn {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer
+}
+
+.tanchucontainer .tanchuTitle .closebtn:hover {
+    color: #ff0
+}
+
+.tanchucontainer .tanchuTitle .closebtn .iconfont {
+    font-size: 12px
+}
+
+.tanchucontainer .tanchuTitle .fangdabtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: none;
+    cursor: pointer
+}
+
+.tanchucontainer .tanchuTitle .fangdabtn:hover {
+    color: #ff0
+}
+
+.tanchucontainer .tanchuTitle .fangdabtn .iconfont {
+    font-size: 18px
+}
+
+.tanchucontainer table {
+    width: 80%;
+    margin: 0 auto
+}
+
+.tanchucontainer table td {
+    padding: 5px 0;
+    color: #b9c4d4
+}
+
+.tanchucontainer table td:nth-child(1) {
+    text-align: right
+}
+
+.tanchucontainer table td:nth-child(2) {
+    text-align: left
+}
+
+.tanchucontainer select,
+.tanchucontainer input {
+    color: #fff;
+    background: #163551;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #b5b5b5;
+    text-indent: 5px;
+    border-radius: 2px;
+    box-sizing: border-box
+}
+
+.tanchucontainer input {
+    text-indent: 7px;
+    color: #e8e9eb
+}
+
+.tanchucontainer textarea {
+    width: 100%;
+    height: 90px;
+    padding: 3px;
+    background: #163551;
+    border: 1px solid #b5b5b5;
+    text-indent: 5px;
+    border-radius: 2px;
+    color: #fff
+}
+
+.tanchucontainer .minbtn {
+    width: 96px;
+    height: 28px;
+    line-height: 26px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: block;
+    margin: 10px auto 0;
+    background: #163551;
+    border: 1px solid #c6e2fd;
+    color: #fff;
+    transition: .3s all;
+    padding: 0;
+    cursor: pointer
+}
+
+.tanchucontainer .minbtn:hover {
+    background: #22425f
+}
+
+.tanchucontainer .addbtn {
+    width: 73px;
+    height: 63px;
+    border: 1px solid #c6e2fd;
+    text-align: center;
+    line-height: 63px;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.tanchucontainer .addbtn i {
+    font-size: 30px
+}
+
+.tanchucontainer .addbtn .formbtn input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0
+}
+
+.tanchucontainer .mingandian_wuranwuList {
+    width: 145px;
+    height: 130px;
+    border: 1px solid #c6e2fd;
+    overflow: hidden;
+    border-radius: 3px;
+    color: #b9c4d4;
+    font-size: 13px;
+    padding: 5px 0;
+    border-radius: 5px;
+    float: left
+}
+
+.tanchucontainer .mingandian_wuranwuList li {
+    line-height: 20px;
+    padding: 0 5px;
+    transition: .3s all;
+    position: relative;
+    font-size: 12px
+}
+
+.tanchucontainer .mingandian_wuranwuList li p {
+    padding-right: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.tanchucontainer .mingandian_wuranwuList li span {
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 10px
+}
+
+.tanchucontainer .mingandian_wuranwuList li:hover {
+    background: #00a0e9;
+    color: #fff
+}
+
+.tanchucontainer .mingandian_wuranEcharts {
+    float: right;
+    width: 270px
+}
+
+.tanchucontainer .mingandian_wuranEcharts h3 {
+    float: left;
+    text-indent: 10px
+}
+
+.tanchucontainer .mingandian_wuranEcharts .mingandian_wuranEcharts_min {
+    width: 182px;
+    height: 130px;
+    border: 1px solid #c6e2fd;
+    float: right;
+    border-radius: 5px
+}
+
+.tanchucontainer.suyuanmoxingcanshu,
+.tanchucontainer.echouCansu {
+    width: 440px;
+    height: 215px
+}
+
+.tanchucontainer.suyuanmoxingcanshu table td:nth-child(2) select,
+.tanchucontainer.echouCansu table td:nth-child(2) select,
+.tanchucontainer.suyuanmoxingcanshu table td:nth-child(2) input,
+.tanchucontainer.echouCansu table td:nth-child(2) input {
+    width: 144px
+}
+
+.tanchucontainer.fanshengdianAddcont,
+.tanchucontainer.wuranyuanAddcont {
+    width: 600px;
+    height: 470px;
+    transition: .3s top bottom
+}
+
+.tanchucontainer.fanshengdianAddcont.zuobiaoStyle,
+.tanchucontainer.wuranyuanAddcont.zuobiaoStyle {
+    top: auto;
+    bottom: 30px;
+    transform: translate(-50%, 0);
+    background: #800080;
+    height: 40px;
+    overflow: hidden
+}
+
+.tanchucontainer.fanshengdianAddcont.zuobiaoStyle .closebtn,
+.tanchucontainer.wuranyuanAddcont.zuobiaoStyle .closebtn {
+    display: none
+}
+
+.tanchucontainer.fanshengdianAddcont.zuobiaoStyle .fangdabtn,
+.tanchucontainer.wuranyuanAddcont.zuobiaoStyle .fangdabtn {
+    display: block
+}
+
+.tanchucontainer.fanshengdianAddcont .tabTitle,
+.tanchucontainer.wuranyuanAddcont .tabTitle {
+    border-bottom: 1px solid #c6e2fd;
+    margin: 0 25px 0 29px;
+    height: 25px
+}
+
+.tanchucontainer.fanshengdianAddcont .tabTitle li,
+.tanchucontainer.wuranyuanAddcont .tabTitle li {
+    float: left;
+    width: 88px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 8px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #fff;
+    cursor: pointer
+}
+
+.tanchucontainer.fanshengdianAddcont .tabTitle li.on,
+.tanchucontainer.wuranyuanAddcont .tabTitle li.on {
+    background: #051039;
+    border-bottom: 1px solid #052647;
+    color: #ff0
+}
+
+.tanchucontainer.fanshengdianAddcont table,
+.tanchucontainer.wuranyuanAddcont table {
+    width: auto;
+    margin: 10px auto 0;
+    font-size: 0
+}
+
+.tanchucontainer.fanshengdianAddcont td,
+.tanchucontainer.wuranyuanAddcont td {
+    font-size: 12px
+}
+
+.tanchucontainer.fanshengdianAddcont .danwei,
+.tanchucontainer.wuranyuanAddcont .danwei {
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%)
+}
+
+.tanchucontainer.fanshengdianAddcont .td1,
+.tanchucontainer.wuranyuanAddcont .td1 {
+    width: 100px;
+    white-space: nowrap;
+    text-align: right
+}
+
+.tanchucontainer.fanshengdianAddcont .td2,
+.tanchucontainer.wuranyuanAddcont .td2 {
+    width: 146px;
+    white-space: nowrap
+}
+
+.tanchucontainer.fanshengdianAddcont .td3,
+.tanchucontainer.wuranyuanAddcont .td3 {
+    width: 90px;
+    white-space: nowrap;
+    text-align: right
+}
+
+.tanchucontainer.fanshengdianAddcont .td4,
+.tanchucontainer.wuranyuanAddcont .td4 {
+    width: 188px;
+    white-space: nowrap
+}
+
+.tanchucontainer.fanshengdianAddcont .ipt_long1,
+.tanchucontainer.wuranyuanAddcont .ipt_long1 {
+    width: 146px
+}
+
+.tanchucontainer.fanshengdianAddcont .ipt_long2,
+.tanchucontainer.wuranyuanAddcont .ipt_long2 {
+    width: 85px
+}
+
+.tanchucontainer.fanshengdianAddcont .ipt_long3,
+.tanchucontainer.wuranyuanAddcont .ipt_long3 {
+    width: 100%
+}
+
+.tanchucontainer.fanshengdianAddcont .ipt_long4,
+.tanchucontainer.wuranyuanAddcont .ipt_long4 {
+    width: 188px
+}
+
+.tanchucontainer.fanshengdianAddcont .pr10,
+.tanchucontainer.wuranyuanAddcont .pr10 {
+    padding-right: 10px;
+    text-align: left
+}
+
+.tanchucontainer.fanshengdianAddcont .pr20,
+.tanchucontainer.wuranyuanAddcont .pr20 {
+    padding-right: 20px;
+    text-align: left
+}
+
+.tanchucontainer.fanshengdianAddcont .pr25,
+.tanchucontainer.wuranyuanAddcont .pr25 {
+    padding-right: 25px;
+    text-align: left
+}
+
+.tanchucontainer.fanshengdianAddcont .pr30,
+.tanchucontainer.wuranyuanAddcont .pr30 {
+    padding-right: 30px;
+    text-align: left
+}
+
+.tanchucontainer.fanshengdianAddcont .pr40,
+.tanchucontainer.wuranyuanAddcont .pr40 {
+    padding-right: 40px;
+    text-align: left
+}
+
+.tanchucontainer.fanshengdianAddcont .pr50,
+.tanchucontainer.wuranyuanAddcont .pr50 {
+    padding-right: 50px;
+    text-align: left
+}
+
+.tanchucontainer.fanshengdianAddcont .zuobiaobox .iconfont,
+.tanchucontainer.wuranyuanAddcont .zuobiaobox .iconfont {
+    top: 3px;
+    right: -20px;
+    cursor: pointer
+}
+
+.tanchucontainer.wuranyuanAddcont .tabContent {
+    height: 300px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative
+}
+
+.tanchucontainer.wuranyuanAddcont .tabContent .addbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox {
+    padding-top: 16px;
+    margin: 0 31px 0 33px
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox h3 {
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #b9c4d4
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .leftbar {
+    float: left;
+    width: 160px
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .leftbar .leftbarCont {
+    height: 230px;
+    overflow: auto;
+    border: 1px solid #c6e2fd;
+    border-radius: 3px;
+    color: #b9c4d4;
+    font-size: 13px;
+    padding: 5px 0
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .leftbar .leftbarCont li {
+    line-height: 20px;
+    padding: 0 5px;
+    transition: .3s all;
+    position: relative;
+    font-size: 12px
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .leftbar .leftbarCont li p {
+    padding-right: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .leftbar .leftbarCont li span {
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 10px
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .leftbar .leftbarCont li:hover {
+    background: #00a0e9;
+    color: #fff
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .rightbar {
+    float: right;
+    width: 347px
+}
+
+.tanchucontainer.wuranyuanAddcont .zhiwenbox .rightbar .rightbarCont {
+    height: 230px;
+    overflow: hidden;
+    border: 1px solid #c6e2fd;
+    border-radius: 3px
+}
+
+.tanchucontainer.zhiwenAddcont {
+    width: 600px;
+    height: 300px
+}
+
+.tanchucontainer.zhiwenAddcont .td1 {
+    width: 132px;
+    vertical-align: top;
+    white-space: nowrap
+}
+
+.tanchucontainer.zhiwenAddcont .td2 {
+    width: 406px
+}
+
+.tanchucontainer.zhiwenAddcont .td2 input {
+    width: 406px
+}
+
+.tanchucontainer.zhiwenAddcont .td2 textarea {
+    width: 100%;
+    height: 90px;
+    resize: none
+}
+
+.tanchucontainer.saveCont {
+    width: 320px;
+    height: 150px
+}
+
+.tanchucontainer.saveCont .tanchuTitle {
+    text-align: left;
+    padding-left: 20px
+}
+
+.tanchucontainer.saveCont .tanchuContent {
+    text-align: center
+}
+
+.tanchucontainer.saveCont .mt30 {
+    margin-top: 30px
+}
+
+.tanchucontainer.delConfirmBox {
+    width: 350px;
+    height: 150px
+}
+
+.tanchucontainer.delConfirmBox .tanchuTitle {
+    text-align: left;
+    padding-left: 20px
+}
+
+.tanchucontainer.delConfirmBox .tanchuContent {
+    text-align: center;
+    font-size: 14px
+}
+
+.tanchucontainer.delConfirmBox .mt30 {
+    margin-top: 30px
+}
+
+.tanchucontainer.delConfirmBox .delbottomBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+.tanchucontainer.delConfirmBox .delbottomBtn button {
+    display: inline-block;
+    margin: 0 10px
+}
+
+.suyuanmoxingcanshu,
+.echouCansu {
+    color: #191919;
+    text-align: center
+}
+
+.tanchuboxCont {
+    color: #191919;
+    text-align: center;
+    padding: 20px 20px
+}
+
+.tanchuboxCont table {
+    width: 80%;
+    margin: 0 auto
+}
+
+.tanchuboxCont table td {
+    padding: 5px 0
+}
+
+.tanchuboxCont table td:nth-child(1) {
+    text-align: right;
+    width: 20%
+}
+
+.tanchuboxCont table td:nth-child(2) {
+    text-align: left;
+    width: 80%
+}
+
+.tanchuboxCont table td:nth-child(2) input {
+    width: 100%;
+    height: 30px;
+    text-indent: 6px
+}
+
+.tanchuboxCont table td:nth-child(2) input.half {
+    width: 50%
+}
+
+.tanchuboxCont table td:nth-child(2) select {
+    width: 50%;
+    height: 30px
+}
+
+.tanchuboxCont table td:nth-child(2) textarea {
+    width: 100%;
+    height: 100px;
+    padding: 6px
+}
+
+.tanchuboxCont button {
+    padding: 3px 6px;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    background: #00a0e9;
+    border: 0;
+    color: #fff;
+    transition: .3s all
+}
+
+.tanchuboxCont button:hover {
+    background: #00a0e9
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar {
+    width: 320px;
+    position: fixed;
+    top: 50px;
+    left: 18px;
+    bottom: 23px;
+    background: #e6eaee;
+    color: #052d59;
+    padding: 13px 0 18px 18px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenTitle {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #052d59;
+    margin-right: 18px
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenTitle .icon-gubenjiegou {
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 3px
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenTitle span {
+    vertical-align: middle
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenTitle .icon-add2 {
+    float: right;
+    cursor: pointer;
+    color: #052647;
+    font-size: 16px
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont {
+    height: calc(100% - 40px);
+    overflow: auto;
+    margin-top: 10px;
+    padding-right: 18px;
+    color: #164778
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li {
+    line-height: 36px;
+    height: 36px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    transition: .3s all;
+    padding-right: 40px
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li .iconfont {
+    font-size: 20px;
+    vertical-align: middle;
+    position: absolute;
+    cursor: pointer;
+    color: #999
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li .iconfont.icon-xingxing {
+    top: 0;
+    left: 0
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li .iconfont.icon-shanchu {
+    display: none;
+    top: 2px;
+    right: 0;
+    cursor: pointer
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li .iconfont.active {
+    font-weight: bold;
+    font-size: 22px;
+    color: #13227a
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li span.txt {
+    vertical-align: middle;
+    display: block;
+    margin: 0 0 0 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer
+}
+
+.zhiwentupuNavCont .zhiwenLeftbar .zhiwenLeftCont ul li span.txt.active {
+    font-weight: bold;
+    font-size: 20px;
+    color: #f00
+}
+
+.zhiwentupuNavCont .zhiwenRightBar {
+    position: fixed;
+    top: 35px;
+    right: 18px;
+    bottom: 23px;
+    left: 340px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 30px 12px 10px 10px;
+    color: #083c70
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .listTitle {
+    height: 34px;
+    line-height: 34px;
+    color: #052d59
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .listTitle i {
+    margin: 0 10px 0 5px;
+    font-size: 20px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .listTitle span {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .listTitle .savebtn {
+    float: right;
+    background: #164778;
+    color: #fff;
+    width: 92px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 3px;
+    transition: .3s all;
+    border: none;
+    cursor: pointer
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .listTitle .savebtn:hover {
+    background: #052647
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox table {
+    width: 100%
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox table .td1 {
+    width: 80px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox table .td2 {
+    width: 150px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox table .td3 {
+    width: 180px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox table .td4 {
+    width: 150px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableTitle {
+    margin-top: 15px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableTitle td {
+    text-align: center;
+    height: 35px;
+    background: #cdd5de;
+    border: 1px solid #ccc
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableContent {
+    height: calc(100% - 80px)
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableContent input[type="checkbox"] {
+    width: 15px;
+    height: 15px
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableContent tr:hover td {
+    background: #e6eaee
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableContent td {
+    text-align: center;
+    height: 38px;
+    border: 1px solid #ccc
+}
+
+.zhiwentupuNavCont .zhiwenRightBar .tablebox.tableContent p {
+    padding: 0 10px
+}
+
+.zhiwentupuNavCont .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: rgba(27, 67, 94, 0.3)
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar {
+    width: 320px;
+    position: fixed;
+    top: 50px;
+    left: 18px;
+    bottom: 23px;
+    background: #e6eaee;
+    color: #052d59;
+    padding: 13px 0 18px 18px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .zhiwenTitle {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #052d59;
+    margin-right: 18px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .zhiwenTitle .icon-xingxing {
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 3px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .zhiwenTitle span {
+    vertical-align: middle
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .zhiwenTitle .icon-add2 {
+    float: right;
+    cursor: pointer;
+    color: #052647;
+    font-size: 16px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont {
+    height: calc(100% - 40px);
+    overflow: auto;
+    margin-top: 10px;
+    padding-right: 18px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li {
+    line-height: 36px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    transition: .3s all
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li p {
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 80px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li .data {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 11px;
+    color: #666
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li .iconfont {
+    cursor: pointer
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li.active p {
+    font-weight: bold;
+    color: #f00;
+    font-size: 18px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li.active .data {
+    color: #f00
+}
+
+.suyuanmoxingNavCont .suyuanmoxingLeftbar .leftbarCont ol li.active:hover p {
+    color: #f00
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar {
+    position: fixed;
+    top: 35px;
+    right: 18px;
+    bottom: 23px;
+    left: 340px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 30px 12px 10px 10px;
+    color: #083c70
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .listTitle {
+    height: 34px;
+    line-height: 34px;
+    color: #052d59
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .listTitle i {
+    margin: 0 10px 0 5px;
+    font-size: 20px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .listTitle span {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .listTitle .savebtn {
+    float: right;
+    background: #164778;
+    color: #fff;
+    width: 92px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 3px;
+    transition: .3s all;
+    border: none;
+    cursor: pointer
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .listTitle .savebtn:hover {
+    background: #052647
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table {
+    width: 100%
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table td {
+    border: 1px solid #ccc
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td1 {
+    width: 45px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td2 {
+    width: 15%
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td3 {
+    width: 90px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td4 {
+    width: 90px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td5 {
+    width: 15%
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td6 {
+    width: 10%
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td7 {
+    width: 10%
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td9 {
+    width: 70px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox table .td10 {
+    width: 50px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableTitle {
+    margin-top: 15px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableTitle td {
+    text-align: center;
+    height: 35px;
+    background: #cdd5de;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableContent {
+    height: calc(100% - 80px)
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableContent input[type="checkbox"] {
+    width: 15px;
+    height: 15px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableContent tr:hover td {
+    background: #e6eaee
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableContent td {
+    text-align: center;
+    height: 38px;
+    border-bottom: 1px solid #ccc
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableContent td p {
+    padding: 0 10px
+}
+
+.suyuanmoxingNavCont .suyuanmoxingRightBar .tablebox.tableContent td .iconfont {
+    cursor: pointer
+}
+
+.suyuanmoxingNavCont .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: rgba(27, 67, 94, 0.3)
+}
+
+.boxTable th,
+.boxTable td {
+    border-color: #c2c2c2 !important;
+    text-align: center
+}
+
+.layui-layer-dialog .layui-layer-content {
+    color: #333
+}
+
+@media screen and (max-width:1366px) {
+    .indexLeftBar {
+        left: 30px
+    }
+
+    .indexRightBar {
+        right: 30px
+    }
+
+    .indexLeftBar,
+    .indexRightBar {
+        width: 300px
+    }
+
+    .indexBottomBar {
+        left: 340px;
+        right: 340px
+    }
+
+    .minganBox .tablebox .data {
+        width: 75px;
+        font-size: 10px
+    }
+
+    .minganBox .tablebox .name {
+        width: 100px
+    }
+
+    .wuranwuBox .tablebox {
+        width: 100%
+    }
+
+    .wuranwuBox .tablebox .td1 {
+        width: 100px
+    }
+
+    .wuranwuBox .tablebox .td2 {
+        width: 100px
+    }
+
+    .mkbox .mkTitle_jiao {
+        padding: 0 55px 0 10px
+    }
+
+    .floatDiv {
+        height: 30px;
+        line-height: 28px
+    }
+
+    .floatDiv li {
+        padding: 0 20px
+    }
+
+    .borderwarp .mk2 {
+        width: 60%
+    }
+
+    .borderwarp .nav {
+        right: 42%
+    }
+
+    .borderwarp .nav li {
+        padding: 0 10px
+    }
+
+    .wuxingbox,
+    .rightXingbox {
+        width: 125px
+    }
+
+    .wuxingbox.rightXingPos,
+    .rightXingbox.rightXingPos {
+        right: 340px;
+        bottom: 35px
+    }
+
+    .progress {
+        margin: 9% 20px 0;
+        height: 14px
+    }
+
+    .progress .progress-bar {
+        height: 8px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .indexBottomBar {
+        height: 0;
+        overflow: hidden
+    }
+
+    .wuxingpos {
+        bottom: 35px !important
+    }
+}
+
+@media screen and (max-height:800px) {
+    .mkbox .mkContent .divstylebox .divstyle h5 {
+        font-size: 68px
+    }
+
+    .mkbox .mkContent .divstylebox .divstyle li {
+        font-size: 12px;
+        line-height: 1.4
+    }
+
+    .progress {
+        margin: 9% 20px 0;
+        height: 14px
+    }
+
+    .progress .progress-bar {
+        height: 8px
+    }
+
+    .suyuanHistroyBox,
+    .suyuanResultBox {
+        height: 250px
+    }
+}
+
+.scrolldiv {
+    overflow: hidden !important
+}

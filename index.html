@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>环保数据分析系统</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_878267_p47lv57d5df.css">
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/environPage.css">   
+</head>
+<body>
+    <!-- 地图 -->
+    <div class="map" id="map"></div>
+    <div class="map" style="background:rgba(4, 38, 71, 0.9)"></div>
+    <div class="indexLeftBar pfix">
+            <div class="mkbox minganBox borderTopLeftRadius">
+                <div class="mkTitle_so mkTitlebox clearfix">
+                    <i class="icon-so"></i>
+                    <input type="text" class="ipt" maxlength="32" placeholder="请输入" id="minganIpt">               
+                </div>
+                <div class="mkContent">
+                    <table class="tablebox">
+                            <tr>                                
+                                <th class="date">发生时间</th>
+                                <th class="data">地点</th>
+                                <th class="describe">描述</th>
+    
+                            </tr>
+                    </table>
+                    <div class="cont-table scrolldiv">
+                            <!-- <table class="tablebox" id="echousuyuan_minganData">
+                                                                                              
+                            </table> -->
+                    </div>
+                </div>
+            </div>
+    
+            <!--  异常事件详情 -->
+            <div class="mkbox jianceBox pr qiejiao appendMingan_event">
+                <div class="mkTitle_jiao mkTitlebox">
+                    异常事件详情
+                </div>
+                <div class="time"></div>
+                <div class="mkContent">
+                    <div class="divstylebox clearfix">
+                        <div class="divstyle">
+                            <h4>VOC浓度：</h4>
+                            <h5>68</h5>
+                            <p class="qiangdu">风速强度:3级</p>
+                        </div>
+    
+                        <div class="divstyle">
+                            <h4>主要污染物：</h4>
+                            <ul>
+                                <li><p>氨</p><span>2.70</span></li>
+                                <li><p>三甲胺</p><span>94.2</span></li>
+                                <li><p>硫化氢</p><span>7.9</span></li>                    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="everDescribe">
+                        <h3>决策建议:</h3>
+                        <p class="limit">需马上开启喷淋器以及遥感监测</p>
+                    </div>
+                </div>
+            </div>
+            <!--  异常事件详情 end -->
+    
+            <div class="mkbox zhiwenpicBox qiejiao pr">
+                    <div class="mkTitle_jiao mkTitlebox">
+                        实时数据
+                    </div>
+                    <div class="pa echartSelect">
+                        <h3><span>温度</span><i class="iconfont icon-xiala"></i></h3>
+                        <ul>
+                            <li data-echarts='[40,60,70,70,100,20,2,3,4,5,6,7,8,70,10,1,30,1,1,50]'>温度</li>
+                            <li data-echarts='[10,1,30,70,100,20,2,3,4,5,1,1,50,40,60,70,6,7,8,70]'>湿度</li>
+                            <li data-echarts='[10,1,30,1,1,100,20,2,3,4,5,6,50,40,60,70,70,7,8,70]'>风速</li>
+                        </ul>
+                    </div>
+                    <div class="mkContent" id="echartsbox1">
+    
+                    </div>
+    
+            </div>                   
+    </div>
+
+    <div class="indexBottomBar pfix clearfix pr ">
+            <!--  监管系数 -->
+            <div class="mkbox suyuanHistroyBox palb pa w49">
+                    <div class="mkTitle_jiao mkTitlebox">
+                        
+                        </div>
+                    <div class="mkContent scrolldiv">
+                            <div class="historyBox">
+                                <div class="hleft">
+                                    <img src="images/icon_img1.jpg">
+                                    <p>粉尘</p>
+                                </div>
+                                <div class="hright">
+                                    <p><span class="lineRed">室内:1.5mg/m3</span></p>
+                                    <p><span class="lineBlue">室外:2.9mg/m3</span></p>
+                                </div>
+                            </div>
+
+                            <div class="historyBox">
+                                <div class="hleft">
+                                    <img src="images/icon_img2.jpg">
+                                    <p>气体</p>
+                                </div>
+                                <div class="hright">
+                                    <p><span class="lineRed">室内:1.5mg/m3</span><span class="lineYellow"></span></p>
+                                    <p><span class="lineBlue">室外:2.9mg/m3</span></p>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <div class="mkbox suyuanResultBox parb pa w49">
+                    <div class="mkTitle_jiao mkTitlebox">
+                            
+                        </div>
+                        <div class="mkContent">
+    
+                            <div class="progress grade grade2">
+                                <div class="progress-bar active" style="width: 30%;">                                
+                                </div>
+                                <div class="progress-per">30%</div>
+                                <div class="progress-text"><img src="images/xing2.png"><span>车间一</span></div>
+                            </div>
+                            
+                            <div class="progress grade grade3">
+                                <div class="progress-bar active" style="width: 12%;">                                
+                                </div>
+                                <div class="progress-per">12%</div>
+                                <div class="progress-text"><img src="images/xing3.png"><span>车间二</span></div>
+                            </div>
+                            
+                            <div class="progress grade grade4">
+                                <div class="progress-bar active" style="width: 5%;">                                
+                                </div>
+                                <div class="progress-per">5%</div>
+                                <div class="progress-text"><img src="images/xing4.png"><span>车间三</span></div>
+                            </div>
+
+                            <div class="progress grade grade5">
+                                <div class="progress-bar active" style="width: 0.1%;">                                
+                                </div>
+                                <div class="progress-per">0.1%</div>
+                                <div class="progress-text"><img src="images/xing5.png"><span>车间四</span></div>
+                            </div>
+                    </div>
+            </div>     
+    </div>
+
+    <div class="indexRightBar pfix">
+        <div class="mkbox wuranyuanBox">
+            <div class="wrtitle">
+               
+                <span class="fr">2019-01-01</span>
+            </div>
+            <div class="textCont">
+                <div class="xiangsidu">
+                        <span>空气指数</span>
+                        &nbsp;&nbsp;<i>4.9</i>
+                </div>
+                <div class="textdl">
+                    <p><b></b>
+                        
+                    </p>
+                    <p><b>企业地址</b>
+                        <span class="limit">东莞市南城区体育中心</span>
+                    </p>
+                    <p><b>联系电话</b>
+                        <span class="limit">0769-21666927</span>
+                    </p>
+                    <p><b></b>
+                        <span class="limit"><a href="#"></a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mkbox wuranwuBox">
+                <div class="mkTitle_left mkTitlebox">
+                    
+                </div>
+                <div class="mkContent">
+                    <table class="tablebox">
+                        <head>
+                            <tr>
+                                <th class="td1">名称</th>     
+                                <th class="td2">浓度</th>  
+                                <th class="td1">名称</th>     
+                                <th class="td2">浓度</th>  
+                            </tr>
+                        </head>
+                    </table>
+                    <div class="cont-table scrolldiv">
+                            <table class="tablebox wuranwuDatabox">                               
+                                    <tr>
+                                        <td class="td1">氢</td>                                        
+                                        <td class="td2">2.70</td>
+                                        <td class="td1">氢</td>                                        
+                                        <td class="td2">2.70</td>                                        
+                                       
+                                    </tr>                                                                        
+                            </table>
+                    </div>
+                </div>
+        </div>
+        <div class="mkbox wuranpicBox pr qiejiao_down_45">
+                <div class="mkTitle_jiao mkTitlebox">
+                    污染源 \ 指纹图谱
+                </div>
+                <div class="pa echartSelect">
+                    <h3><span>温度</span><i class="iconfont icon-xiala"></i></h3>
+                    <ul>
+                        <li data-echarts='[40,60,70,70,100,20,2,3,4,5,6,7,8,70，10,1,30,1,1,50]'>温度</li>
+                        <li data-echarts='[10,1,30,70,100,20,2,3,4,5,1,1,50,40,60,70,6,7,8,70]'>湿度</li>
+                        <li data-echarts='[10,1,30,1,1,100,20,2,3,4,5,6,50,40,60,70,70,7,8,70]'>风速</li>
+                    </ul>
+                </div>
+                <div class="mkContent" id="echartsbox2">
+
+                </div>
+        </div>
+    </div>
+
+    <div class="tanchucontainer suyuanmoxingcanshu" id="suyuanmoxingcanshu">    
+        <div class="tanchuTitle">污染溯源<span class="closebtn" onclick="closeTanchu()"><i class="iconfont icon-guanbi"></i></span></div>    
+        <div class="tanchuContent">
+                <table>
+                        <tr>
+                            <td>溯源模型：</td>
+                            <td>
+                                <select>
+                                    <option>3KM范围内</option>
+                                    <option>5KM范围内</option>
+                                </select>
+                            </td>                                
+                        </tr>
+                        <tr>
+                            <td>指纹图谱：</td>
+                            <td>
+                                <select>
+                                    <option>FP-20</option>
+                                    <option>FP-19</option>
+                                    <option>FP-18</option>
+                                </select>
+                            </td>                                
+                        </tr>
+                        <tr>
+                            <td>最小相似度：</td>
+                            <td>
+                            <input type="text" class="">
+                            </td>                                
+                        </tr>
+                    </table>
+                    <div id='suyuanrun' class="minbtn">溯源</div>
+        </div>
+    </div>
+
+
+
+    <!-- 四周框架 -->
+    <div class="borderwarp pr">
+        <h1 class="pfix" ><img src="images/logo.png" style="height: 40px;"><span>环保数据分析系统</span></h1>
+        <ul class="nav pfix">
+            <li class="on"><a _href="index.html">数据视图</a></li>
+            <!-- <li><a href="mingandian.html">企业视图</a></li> -->
+            <li><a href="wuranyuan.html">历史数据</a></li>
+            <li><a href="zhiwentupu.html">监管系数</a></li>
+            <!-- <li><a href="suyuanmoxing.html">设备模型</a></li>  -->
+        </ul>
+        <span class="pfix ren"><i class="iconfont icon-geren"></i></span>
+        <div class="bg pfix jiaoNav"></div>
+        <div class="bg pfix jiaoRight"></div>
+        <div class="pfix jiao1"></div>
+        <div class="pfix jiao2"></div>        
+        <div class="bg pfix mk1"></div>
+        <div class="bg pfix mk2"><div class="pa jiao3"></div></div>
+        <div class="bg pfix lineTop"></div>
+        <div class="bg pfix lineBottom"></div>
+        <div class="bg pfix lineLeft"></div>
+        <div class="bg pfix lineRight"></div>        
+    </div>
+    <div class="coverbg"></div>
+
+    
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/laydate/laydate.js"></script>
+
+
+<script src="http://api.map.baidu.com/api?v=2.0&ak=jRKcMvI6fzZGwmXAa3p3Utw0ydsFyT3E"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+<script type="text/javascript" src="js/config.js" ></script>
+<script type="text/javascript" src="js/environMap.js" ></script>
+
+<!--数据json -->
+<script src="js/data_mingandian.js"></script>
+<script src="js/data_wuranwu.js"></script>
+<script src="js/data_wuranwuyuan.js"></script>
+
+<script src="js/nav_common.js"></script>
+<script src="js/data_echarts.js"></script>
+
+
+<script src="js/nav1_echou.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

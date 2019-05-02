@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>环保数据分析系统</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_878267_p47lv57d5df.css">
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/environPage.css">   
+</head>
+<body>
+    <div class="zhiwentupuNavCont">
+            <div class="zhiwenLeftbar pa">
+                <div class="zhiwenTitle">
+                    <i class="iconfont icon-gubenjiegou"></i>
+                    <span>指纹图谱</span>
+                    <i class="iconfont icon-add2" onclick="openTanchu('zhiwenAddcont')"></i>
+                </div>
+                <div class="scrolldiv zhiwenLeftCont">
+                    <ul id="zhiwenliist">
+                        <li><i class="iconfont icon-xingxing active"></i> <span class="txt active">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('1')"></i></li>
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('2')"></i></li>
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('3')"></i></li>
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('4')"></i></li>                      
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('6')"></i></li>
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('7')"></i></li>
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('8')"></i></li>
+                        <li><i class="iconfont icon-xingxing"></i> <span class="txt">FB-20</span> <i class="iconfont icon-shanchu" onclick="delzhiwen('1')"></i></li>
+                               
+                    </ul>   
+                </div>         
+            </div>
+            <!-- 左侧 end -->
+
+            <!-- 右侧  -->
+            <div class="zhiwenRightBar pa">
+                <div class="listTitle">
+                    <i class="iconfont icon-wuranyuanguanli"></i>
+                    <span>污染物列表</span>
+                    <input type="button" class="savebtn" value="保存" id="rightSaveBtn">
+                </div>
+                <!-- 标题 -->
+                <div class="tableTitle tablebox">
+                    <table>
+                        <tr>
+                            <td class="td1">选择</td>
+                            <td class="td2">CAS编号</td>
+                            <td class="td3">污染物名称</td>
+                            <td class="td4">嗅阀值</td>
+                            <td class="td5">气味特点</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 内容 -->
+                <div class="tableContent tablebox scrolldiv" id="zhiwenDataList">
+                    <table>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">氨气</td>
+                            <td class="td4">2.7</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">三甲胺</td>
+                            <td class="td4">1.2</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name="" checked='true'></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">硫化氢</td>
+                            <td class="td4">1.6</td>
+                            <td class="td5"><p>轻微异味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">甲硫醚</td>
+                            <td class="td4">2.2</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">苯乙烯</td>
+                            <td class="td4">1.9</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name="" checked='true'></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">二甲二硫</td>
+                            <td class="td4">6.0</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">二硫化碳</td>
+                            <td class="td4">11.1</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">乙苯</td>
+                            <td class="td4">10.9</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">丙醛</td>
+                            <td class="td4">1.20</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name="" checked='true'></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">氨气</td>
+                            <td class="td4">1.12</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">丁醛</td>
+                            <td class="td4">12.2</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">戊醛</td>
+                            <td class="td4">1.32</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name="" checked='true'></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">乙酸乙酯</td>
+                            <td class="td4">1.62</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">甲基乙基酮</td>
+                            <td class="td4">17.2</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">甲基异丁基</td>
+                            <td class="td4">1.82</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">甲基异丁基酮</td>
+                            <td class="td4">1.22</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">乙醛</td>
+                            <td class="td4">1.12</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">丙烯酸甲酯</td>
+                            <td class="td4">16.2</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">酚类</td>
+                            <td class="td4">1.72</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">甲基丙烯酸甲酯</td>
+                            <td class="td4">1.28</td>
+                            <td class="td5"><p>有明显烧焦味</p></td>
+                        </tr>
+
+                        <tr>
+                            <td class="td1"><input type="checkbox" name=""></td>
+                            <td class="td2">111-11-1</td>
+                            <td class="td3">臭气浓度</td>
+                            <td class="td4">21.2</td>
+                            <td class="td5"><p>刺激性气味</p></td>
+                        </tr>
+                        
+                        
+                    </table>
+                </div>
+            </div>
+            <!-- 右侧 end -->
+    </div>
+    <!-- 指纹图谱 end-->
+
+    <!-- 弹出层-添加指纹图谱 -->
+    <div class="tanchucontainer zhiwenAddcont" id="zhiwenAddcont">
+        <div class="tanchuTitle">指纹图谱<span class="closebtn" onclick="closeTanchu()"><i class="iconfont icon-guanbi"></i></span></div>    
+        <div class="tanchuContent">
+            <table>
+                <tr>
+                    <td class="td1">指纹图谱名称：</td>
+                    <td class="td2">
+                            <input type="text" name=""  placeholder="指纹图谱名称">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">指纹图谱描述：</td>
+                    <td class="td2">
+                        <textarea placeholder="指纹图谱描述" ></textarea>
+                    </td>
+                </tr>
+            </table>            
+            <button id='zhiwenAddSave' class="minbtn">保存</button>
+        </div>
+    </div>
+    <!-- 弹出层-添加指纹图谱 end -->
+
+
+    <!-- 弹出层：右侧保存框 -->
+    <div class="tanchucontainer saveCont" id="rightSavebox">
+            <div class="tanchuTitle">保存信息<span class="closebtn" onclick="closeTanchu()"><i class="iconfont icon-guanbi"></i></span></div>    
+            <div class="tanchuContent">
+                保存成功！
+                <button id='closeSavebtn' class="minbtn mt30" onclick="closeTanchu()">关闭</button>
+            </div>
+    </div>
+    <!-- 弹出层：右侧保存框 end-->
+    
+
+    <!-- 弹出层：删除确认框 -->
+    <div class="tanchucontainer delConfirmBox" id="delConfirmBox">
+            <div class="tanchuTitle">删除确认框<span class="closebtn" onclick="closeTanchu()"><i class="iconfont icon-guanbi"></i></span></div>    
+            <div class="tanchuContent">
+                确认删除此条数据吗？
+
+                <div class="delbottomBtn">
+                    <button id='deltrue' class="minbtn mt30" >确认</button>
+                    <button class="minbtn mt30" onclick="closeTanchu()">取消</button>
+                </div>                
+            </div>
+    </div>
+    <!-- 弹出层：删除确认框 end-->
+
+
+
+
+    <!-- 四周框架 -->
+    <div class="borderwarp pr">
+        <h1 class="pfix"><img src="images/logo.png" style="height: 50px;"><span>环保数据分析系统</span></h1>
+        <ul class="nav pfix">
+            <li><a href="index.html">数据视图</a></li>
+            <!-- <li><a href="mingandian.html">企业视图</a></li> -->
+            <li><a href="wuranyuan.html">历史数据</a></li>
+            <li class="on"><a href="zhiwentupu.html">监管系数</a></li>
+            <!-- <li><a href="suyuanmoxing.html">设备模型</a></li> -->
+        </ul>
+        <span class="pfix ren"><i class="iconfont icon-geren"></i></span>
+        <div class="bg pfix jiaoNav"></div>
+        <div class="bg pfix jiaoRight"></div>
+        <div class="pfix jiao1"></div>
+        <div class="pfix jiao2"></div>        
+        <div class="bg pfix mk1"></div>
+        <div class="bg pfix mk2"><div class="pa jiao3"></div></div>
+        <div class="bg pfix lineTop"></div>
+        <div class="bg pfix lineBottom"></div>
+        <div class="bg pfix lineLeft"></div>
+        <div class="bg pfix lineRight"></div>        
+    </div>
+    <!-- 四周框架end -->
+
+    <!-- 弹出层遮罩 -->
+    <div class="coverbg"></div>
+
+   
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="js/nav_common.js"></script>
+
+    <!-- 指纹信息的js -->
+    <script src="js/nav4_zhiwen.js"></script>
+
+</body>
+</html>

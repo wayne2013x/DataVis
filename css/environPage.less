@@ -1,0 +1,2031 @@
+//公用样式
+*{
+    box-sizing: border-box;
+}
+body{ font-family:  "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    font-size: 12px;
+}
+.pr{ position: relative;}
+.pa{ position: absolute;}
+.pfix{ position: fixed;}
+.w100{ width: 100%; }
+.h100{ height: 100vh;}
+.w49{ width: 49%;}
+.fl{ float: left;}
+.fr{
+    float: right;
+}
+.divHide{
+    visibility: hidden;    
+}
+.divshow{
+    visibility:visible;
+}
+.clearfix:after {
+    content:""; 
+    display: block; 
+    clear:both; 
+ }
+ .none{
+     display: none;
+ }
+h1,h2,h3,h4,h5,h6{
+    padding:0; margin: 0;
+}
+
+//限制两行
+.limit1{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1;
+}
+.limit{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.limit3{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+}
+
+.mCSB_scrollTools{
+     width: 8px;
+}
+
+
+body{
+   font-family: '微软雅黑';
+}
+
+@blue:rgba(6,46,90,1);
+@gray:#273649;
+@blue_light:#314d73;
+
+// .loadPagebox{ visibility: hidden;}
+// .loadPagebox.show{ visibility:visible;}
+
+//环境系统
+body{
+    min-width: 1024px;
+    margin:0 auto;
+}
+//四周框架
+.borderwarp{
+    z-index: 10000;
+    .bg{
+        background: @blue;
+    }
+    .lineTop{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        left: 0;
+        right: 0;
+        top:0;
+    }
+    .lineBottom{
+        height:23px;
+        bottom: 0; 
+        left: 0;
+        right: 0px;
+    }
+    .lineLeft{
+        width: 18px;
+        top:51px;
+        bottom:23px;
+        left: 0;
+    }
+    .lineRight{
+        width: 18px;
+        top:58px;
+        bottom:23px;
+        right: 0;
+    }
+    .jiao1{
+        width:0;
+        height:0;
+        border-top:30px solid transparent;
+        border-bottom:30px solid transparent;
+        border-left:30px solid @blue;       
+        bottom:3px;
+        right: 13px;
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg); 	/* IE 9 */
+        -moz-transform:rotate(45deg); 	/* Firefox */
+        -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+        -o-transform:rotate(45deg);                    
+    }
+    .jiao2{
+        width:0;
+        height:0;
+        border-top:19px solid transparent;
+        border-bottom:19px solid transparent;
+        border-left:19px solid @blue;       
+        top:19px;
+        right: 49px;
+        transform:rotate(-45deg);
+        -ms-transform:rotate(-45deg); 	/* IE 9 */
+        -moz-transform:rotate(-45deg); 	/* Firefox */
+        -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+        -o-transform:rotate(-45deg);                    
+    }
+    .jiao3{
+        width:0;
+        height:0;
+        border-top:15px solid transparent;
+        border-bottom:15px solid transparent;
+        border-right:15px solid @blue;       
+        top:-15px;
+        right:-12px;
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg); 	/* IE 9 */
+        -moz-transform:rotate(45deg); 	/* Firefox */
+        -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+        -o-transform:rotate(45deg);                    
+    }
+    .mk1{
+        width: 52px;
+        height: 23px;
+        top:35px;
+        right: 0;        
+    }
+    .mk2{
+        width: 50%;
+        height: 16px;
+        top:35px;
+        left: 0;        
+    }
+    h1{
+        height: 50px;
+        line-height: 50px;
+        top:0;
+        left: 0;
+        z-index: 2;
+        font-size: 16px;
+        color: #fff;
+        margin: 0;
+        padding-left: 19px;
+        img{
+            vertical-align: top;        
+        }
+        span{
+            vertical-align: bottom;
+            margin-left:13px;
+            font-weight: bold;
+            color: #eee;
+            font-family: '微软雅黑';
+        }        
+    }
+    .nav{
+        z-index: 2;
+        list-style: none;
+        margin: 0;
+        padding:0;
+        top:10px;
+        right:51%;
+        li{
+            float: left;
+            color: #fff;
+            height: 35px;
+            line-height: 35px;
+            padding:0 14px;
+            font-size: 16px;
+            cursor: pointer;
+            
+            a{
+                color: #7a94af;
+            }
+            &.on{
+                a{
+                    color: #eee;
+                }
+                
+            }
+        }
+    }
+    .ren{
+        top:10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2;
+        i{
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+        
+}
+
+
+//首页左侧内容
+.indexLeftBar{
+    left: 37px;
+    top:68px;
+    bottom:31px;
+    width: 21.875%;
+}
+
+//首页右侧内容
+.indexRightBar{
+    right: 37px;
+    top:68px;
+    bottom:31px;
+    width: 21.875%;    
+}
+
+//首页底部内容
+.indexBottomBar{
+    left: 25%;
+    right: 25%;
+    bottom:31px;
+    height: 294px;
+}
+
+
+
+//通用模块样式：边框，透明背景，发光阴影
+.mkbox{    
+    height: e("calc((100vh - 123px)/3)");
+    margin-bottom:10px; 
+    // background-size:100% 100%; 
+    background: rgba(4,38,71,0.9);
+    border-radius: 4px;
+    // border:1px solid #00c1de;
+    // box-shadow: 0 0 5px #00c1de;
+    overflow: hidden;
+
+    &.qiejiao{
+        background:linear-gradient(-50deg, transparent 15px, rgba(9,39,73,0.9) 0);
+    }
+    &.qiejiao_down_45{
+        background:linear-gradient(-45deg, transparent 15px, rgba(9,39,73,0.9) 0);
+    }
+    
+    &.qiejiao_up{
+        background:linear-gradient(-135deg, transparent 15px, rgba(9,39,73,0.9) 0);
+    }
+
+    &.borderTopLeftRadius{
+        border-top-left-radius: 20px;
+    }
+    
+    
+    &.palb{
+        left: 0;
+        bottom: -8px;
+        min-height:  e("calc(100vh * 0.312)");
+
+    }
+    &.parb{
+        right: 0;
+        bottom: -8px;
+        min-height:  e("calc(100vh * 0.312)");
+    }
+    .mkTitle_so{
+        text-align: center;
+        font-size: 13px;
+        line-height: 40px;
+        height: 40px;
+        color: #fff;
+        overflow: hidden;
+
+        .icon-so{
+            width: 18px;
+            height: 18px;
+            background: url(../images/icon_so.png) no-repeat;
+            background-size:cover; 
+            display: block;
+            float: left;
+            margin:12px 0 0 20px;
+            
+        }
+        .ipt{
+            float: left;
+            width: calc(~"100% - 70px");
+            height: 26px;
+            line-height: 26px;
+            margin:8px 0 0 8px;
+            background: none;
+            border:none;
+            transition: .5s all;
+            color: #fff;
+            &:focus{
+                border-bottom: 1px solid rgba(139, 195, 252, 0.8);
+            }
+            
+
+        }
+        .btn{
+            float: left;
+            font-size: 12px;
+            width: 40px;
+            height: 20px;
+            line-height: 20px;
+            background: #00a0e9;
+            padding:0;
+            outline: none;
+            color: #fff;
+            margin:10px 0 0 10px;
+        }
+    }
+    .mkTitle_jiao{
+        height: 40px;
+        background: #1a334e;
+        display: inline-block;
+        color: #fff;
+        padding:0 70px 0 20px;
+        line-height: 40px;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        background:linear-gradient(-45deg, transparent 40px, #162e48 0);
+    }
+    .mkTitle_center{
+        text-align: center;
+        font-size: 13px;
+        line-height: 40px;
+        height: 40px;
+        color: #fff;
+    }
+    .mkTitle_left{
+        text-align: left;
+        font-size: 13px;
+        line-height: 40px;
+        height: 40px;
+        color: #fff;
+        text-indent: 20px;
+    }
+
+    .time{
+        position: absolute;
+        height: 40px;
+        line-height: 50px;
+        top:0;
+        right: 15px;
+        color: #b9c4d4;
+    }
+    .echartSelect{
+        position: absolute;        
+        top:10px;
+        right: 15px;  
+        z-index: 2;                  
+        h3{ 
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+            font-weight: normal;
+            white-space: nowrap;
+            span{padding-left: 10px; display: inline-block;min-width: 60px; text-align: right;}
+            i{width: 20px; height: 20px; display: inline-block; text-align: center; line-height: 20px; margin-left: 10px; transition: .5s all;}
+        }
+        ul{
+            background: rgba(255, 255, 255, 1);
+            padding:0;
+            display: none;
+            border-radius: 3px;
+            overflow: hidden;
+            li{
+                color: #333;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                cursor: pointer;
+                padding:0 5px;
+                overflow: hidden;
+                &:nth-last-child(1){
+                    padding-bottom: 5px;
+                }
+                &:hover{
+                    background: #00a0e9;
+                    color: #fff;
+                }
+            }
+        }
+        &:hover{
+            h3{
+                i{
+                    transform:rotate(180deg);
+                }
+            }
+            ul{
+                display: block;
+            }
+        }
+    }
+    .mkContent{
+        overflow: hidden;
+        color: #b9c4d4;
+
+        .divstylebox{
+            padding-top:5px;
+            .divstyle{                
+                &:nth-child(1){ width: 60%; padding-left: 14px; }
+                &:nth-child(2){ width: 30%; float: right; margin-right: 5%; }
+                float: left;
+                text-align: center;
+                box-sizing: border-box;
+                h4{
+                    text-align: left;
+                    margin:0;
+                }
+                h5{
+                    font-size: 92px;
+                    line-height: 1em;
+                    margin:0;
+                    text-align: center;
+
+                }
+                .qiangdu{
+                    height:20px;
+                    background: #dc9418;
+                    display: inline-block;
+                    color: #fff;
+                    padding:0 20px;
+                    font-size: 12px;
+                    border-radius: 20px;
+                }
+                
+                ul{
+                    margin-top:10px; 
+                    padding-right: 20px;
+                    li{
+                        text-align: left;
+                        line-height: 30px;
+                        height: 30px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        position: relative;
+                        p{
+                 
+                            margin-right: 30px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        span{
+                            top:0;
+                            right: 0;
+                            position: absolute;
+                        }
+                    }
+                }            
+            }
+            
+        }
+        .everDescribe{
+            margin-top:3%;
+            padding:8px 15px;
+ 
+            h3{ font-size: 14px; font-weight: bold; }
+            p{
+                font-size: 12px;
+                line-height: 1.5;
+                margin-top:5px;
+                
+            }
+        }
+        
+    }
+
+    .cont-table{
+        height: calc(~"100% - 18px");
+        overflow: auto;
+    }
+    .tablebox{
+        width: 100%;
+        th,td{
+            font-weight: normal;
+            height: 30px;            
+            border: 1px solid #2f4e6d;
+            border-collapse:collapse;
+            padding:3px 0px; 
+            text-align: center;            
+            overflow: hidden;
+        }
+        th{font-size: 14px;}
+        td{  font-size: 12px;
+            
+        }
+        .bluebg{
+            td{
+                background: #00a0e9!important;
+                color: #fff;
+            }
+        }
+    }
+
+    &.mkbox_big{
+        height:  e("calc((100vh - 100px))");
+        .mkContent{
+            overflow: auto;
+        }
+    }
+
+}
+
+
+//敏感点
+.minganBox{    
+    .tablebox{        
+        // width: 100%;
+        th,td{
+            box-sizing: border-box;
+        }
+        .data{ width:100px; font-size: 10px;}
+        .name { width: 150px; }        
+        .name p{ text-align: center;
+            padding: 2px 5px;
+            cursor: pointer;
+        }
+        .describe{
+            
+        }
+        .describe p{
+            text-align: center;
+            padding: 2px 5px;
+
+        }
+    }
+}
+
+
+//敏感点添加
+.minganAddBox{
+    .mkTitle_center{
+        border-bottom:1px solid #234062;
+
+        .icon-add{
+            top:50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+    
+    li{
+        height: 40px;
+        overflow: hidden;
+        line-height: 40px;
+        color: #b9c4d4;
+        font-size: 13px;
+        padding:0 23px;
+        border-bottom: 1px solid #1c3c61;
+        transition: 0.5s all;
+        cursor: pointer;
+        i{ font-size: 18px; vertical-align: middle;
+            margin-right: 10px;
+        }
+        span{
+            vertical-align: middle;
+            &.cont{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                display: inline-block;
+                width: 60%;
+                
+            }
+            &.data{
+                float: right;
+                font-size: 10px;
+            }
+        }
+
+        &:hover{
+            background: rgba(0,160,233,0.5);
+           
+        }
+        &.active{
+            background: #00a0e9;
+          
+        }
+        
+    }
+
+}
+
+//污染源
+.wuranyuanBox{
+    background: url(../images/wuranyuanbg.png) no-repeat bottom left;
+    background-size:cover; 
+    border:0;
+    color: #fff;
+    overflow: hidden;
+    .wrtitle{
+        height: 40px;
+        padding:0 10px;
+        line-height: 40px;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px #083c70;
+        span{
+            font-size: 12px;
+            &.edit{
+                cursor: pointer;
+            }
+        }
+    }
+    .textCont{
+      
+        .pic{
+            width: 77px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            margin-left: 27px;
+            font-size: 0;
+            img{                
+                max-width: 77px;
+                max-height: 70px;          
+
+            }
+        }
+    }
+    .xiangsidu{
+        margin-top: 5px;
+        margin-left: 26px;
+        i{             
+            width: 60px; 
+            height: 60px; 
+            line-height: 60px;
+            background: #e77541; 
+            border-radius: 50%;
+            display: inline-block;
+            border-radius: 50%;
+            font-size: 20px;
+            font-style: normal;
+            text-align: center;
+
+        }
+        span{
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+    }
+    .textdl{
+        padding-left: 100px;
+        font-size: 12px;
+        margin-top:10px;
+        margin-right: 20px;
+        p{
+            position: relative;
+            line-height: 20px;
+            margin-top:2px; 
+            text-shadow: 1px 1px 2px #083c70;
+            b{
+                position: absolute;
+                left:-90px;
+                top:0;
+                width: 75px;
+                text-align: right;
+            }
+        }
+    }
+    .line{
+        height: 1px;
+        overflow: hidden;
+        background: rgba(255,255,255,0.1);
+        margin:10px 15px 10px;
+    }
+}
+
+//污染源\污染物信息
+.wuranwuBox{
+    .tablebox{     
+        width: 100%;   
+        .td1{ width: 25%;}
+        .td2{ width: 25%;}
+        
+    }
+}
+
+//溯源历史
+.historyBox{
+    margin:5px 14px;
+    background: #0f2d47;
+    min-height:74px;
+    max-height: 120px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    &:nth-child(1){
+        margin-top:10px; 
+        margin-bottom: 5px;
+    }
+    .hleft{
+  
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top:50%;
+        left: 3%;
+        transform: translateY(-50%);
+        img{ width: 35px; display: block; margin: 0 auto;}
+        p{ height: 27px; line-height: 27px; color: #fff; text-align: center; font-size: 12px;}
+    }
+    .hright{
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left: 20%;
+        right: 15px;
+        p{ white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 12px; margin:5px 0;}
+        span{
+             color: #fff;
+             margin-right: 21px;
+            &::before{
+                content: '';
+                display: inline-block;
+                width: 2px;
+                height: 21px;
+                background: #fff;
+                margin-right: 21px;
+                vertical-align: middle;
+
+            }
+            &.lineRed{
+                &::before{
+                    background: #fb0101;
+                }
+            }
+            &.lineBlue{
+                &::before{
+                    background: #00a0e9;
+                }
+            }
+            &.lineYellow{
+                &::before{
+                    background: #f29b76;
+                }
+            }
+
+        }
+    }
+}
+
+
+/* 溯源结果*/
+.progress{
+	height: 19px;
+	background: #262626;
+	padding: 2px;
+	overflow: visible;
+	border-radius: 20px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #7992a8;
+    margin: 8% 20px 0;
+    position: relative;    
+    font-size: 15px;
+    .progress-bar{
+        border-radius: 20px;
+        height:14px;
+        position: relative;
+        animation: animate-positive 2s;
+        cursor: pointer;
+    }
+    .progress-per{
+        display: block;        
+        font-size: 14px;
+        color: #fff;                
+        position: absolute;
+        top: -22px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .progress-text{
+        position:absolute;
+        top:-34px;
+        left: 0px;
+        cursor: pointer;
+        span{
+            vertical-align: middle;
+        }
+        img{
+            margin-right: 3px;
+            vertical-align: middle;
+        }
+        
+    }
+    &.grade{
+        i{ font-size: 18px; }
+        
+        &.grade1{
+            .progress-bar{ background:#ff2943; }
+            i{
+                color: #ff2943;
+                text-shadow: 0 0 5px #ff2943;
+            }
+        }
+        &.grade2{
+            .progress-bar{ background:#ff0000; }
+            i{
+                color: #ff0000;
+                text-shadow: 0 0 5px #ff0000;
+            }
+        }
+        &.grade3{
+            .progress-bar{ background:#dc9418; }
+            i{
+                color: #dc9418;
+                text-shadow: 0 0 5px #dc9418;
+            }
+        }
+        &.grade4{
+            .progress-bar{ background:#dbed84; }
+            i{
+                color: #dbed84;
+                text-shadow: 0 0 5px #dbed84;
+            }
+        }
+        &.grade5{
+            .progress-bar{ background:#66bb56; }
+            i{
+                color: #66bb56;
+                text-shadow: 0 0 5px #66bb56;
+            }
+        }
+    }
+   
+}
+
+@-webkit-keyframes animate-positive{
+	0% { width: 0; }
+}
+@keyframes animate-positive{
+	0% { width: 0; }
+}
+
+
+//五星标识
+.wuxingbox,.rightXingbox{
+    width: 140px;
+    min-height: 200px;      
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    position: fixed;  
+    background: rgba(4,38,71,0.9);  
+    display: none;    
+   
+
+    &.wuxingpos{
+        left: 25%;
+    }
+    &.rightXingPos{
+        min-height: 98px;
+        right: 24.5%;
+        bottom:35px;
+        border-radius: 5px;
+        display: block;
+    }
+
+
+    &.qiejiao{
+        background:linear-gradient(-50deg, transparent 15px, rgba(9,39,73,0.9) 0);
+    }
+    &.qiejiao_down_45{
+        background:linear-gradient(-45deg, transparent 15px, rgba(9,39,73,0.9) 0);
+    }
+    
+    &.qiejiao_up{
+        background:linear-gradient(-135deg, transparent 15px, rgba(9,39,73,0.9) 0);
+    }
+    
+    ul{ padding-top:10px;}
+    li{ height: 36px; }
+    img{
+        margin-right: 5px;
+        vertical-align: middle
+    }
+    span{
+         vertical-align: middle;
+    }
+}
+
+
+
+//浮层选项卡
+.floatDiv{
+    position: fixed;    
+    top:70px;
+    right: 480px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border:1px solid #8b9aad;
+    background: #273649;
+    line-height: 33px;
+    text-align: center;
+    
+    
+    li{ 
+        float: left;
+        cursor: pointer;
+        padding:0 25px;
+        transition: 0.3s all;
+        &:nth-child(1){
+            border-right:1px solid #8b9aad;
+        }
+        &.active{
+            background: #00a0e9;
+        }
+       
+    }
+}
+//弹出层遮罩样式
+.coverbg{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.3);    
+    z-index: 10001;
+    display: none;
+    
+}
+//弹出层里的样式
+.tanchucontainer{
+    display: none;
+    position: fixed;
+    background:rgba(5,38,71,1);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10002;
+    color: #fff;
+    border-radius: 5px;
+    padding:0px;
+    .tanchuContent{
+        padding-top:10px;
+    }
+
+   
+
+    //弹出层-标题
+    .tanchuTitle{
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        height: 42px;
+        line-height: 42px;
+        position: relative;        
+        .closebtn{
+            position:absolute;
+            top:6px;
+            right: 10px;
+            width: 20px;
+            height:20px;
+            line-height: 20px;     
+            cursor: pointer;     
+            &:hover{
+                color: yellow;
+            }  
+            .iconfont{
+                font-size: 12px;
+            }
+        }
+        .fangdabtn{
+            position:absolute;
+            top:10px;
+            right: 10px;
+            width: 20px;
+            height:20px;
+            line-height: 20px;    
+            display: none; 
+            cursor: pointer;     
+            &:hover{
+                color: yellow;
+            }  
+            .iconfont{
+                font-size: 18px;
+            }
+        }
+        
+
+    }
+
+    //弹出层表格组件样式
+    table{
+        width: 80%;
+        margin: 0 auto;
+        td{
+            padding: 5px 0;
+            color: #b9c4d4;
+            &:nth-child(1){
+                 text-align: right;
+            }
+            &:nth-child(2){
+                text-align: left;                    
+            }
+        }
+    }
+    select,input{
+        color: #FFF;
+        background: #163551;
+        height: 24px;
+        line-height: 24px;
+        border:1px solid #b5b5b5;
+        text-indent: 5px;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    input{
+        text-indent: 7px;
+        color: #e8e9eb;
+    }
+    textarea{
+        width: 100%;
+        height: 90px;
+        padding: 3px;
+        background: #163551;
+        border:1px solid #b5b5b5;
+        text-indent: 5px;
+        border-radius: 2px;
+        color: #fff;
+   }
+   .minbtn{
+        width: 96px;
+        height: 28px;
+        line-height: 26px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        display: block;
+        margin: 10px auto 0;        
+        background: #163551;                        
+        border:1px solid #c6e2fd;
+        color: #fff;
+        transition: 0.3s all;
+        padding: 0;
+        cursor: pointer;
+        &:hover{
+            background:#22425f;
+        }
+    }
+    .addbtn{
+        width: 73px;
+        height: 63px;
+        border:1px solid #c6e2fd;
+        text-align: center;
+        line-height: 63px;
+        border-radius: 3px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        i{
+            font-size: 30px;
+        }
+        .formbtn{            
+            input{
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                top:0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+            }
+        }
+
+    }
+
+    //弹出层-敏感点-污染物信息
+    .mingandian_wuranwuList{
+        width: 145px;
+        height: 130px;
+        border:1px solid #c6e2fd;
+        overflow: hidden;                          
+        border-radius: 3px;
+        color: #b9c4d4;
+        font-size: 13px;
+        padding:5px 0px;
+        border-radius: 5px;
+        float: left;
+        li{
+            line-height: 20px;
+            padding:0 5px;
+            transition: .3s all;
+            position:relative;
+            font-size: 12px;
+            p{
+                padding-right: 45px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            span{
+                    font-size: 11px;
+                    position: absolute;
+                    top:0;
+                    right: 8px;
+                    font-size: 10px;
+            }
+            &:hover{
+                background: #00a0e9;
+                color: #fff;
+            }
+        }        
+    }
+    //弹出层-敏感点-污染echarts
+    .mingandian_wuranEcharts{
+        float: right;
+        width: 270px;
+        h3{ float: left; text-indent: 10px;}
+        .mingandian_wuranEcharts_min{
+            width: 182px;
+            height: 130px;
+            border:1px solid #c6e2fd;
+            float: right;
+            border-radius: 5px;
+        }
+    }
+
+    //溯源模型
+    &.suyuanmoxingcanshu,
+    &.echouCansu
+    {
+        width: 440px;
+        height: 215px;
+        table{
+            td{
+                &:nth-child(2){
+                    select,input{
+                        width: 144px;
+                       
+                    }                   
+                }
+            }
+        }        
+    }
+
+    //敏感点 && 污染源 弹出层 - 添加内容
+    &.fanshengdianAddcont,&.wuranyuanAddcont{
+        width: 600px;
+        height: 470px;   
+        transition: .3s top bottom;
+        
+        &.zuobiaoStyle{
+            top:auto;
+            bottom: 30px;
+            transform: translate(-50%,0);
+            background: purple;
+            height: 40px;
+            overflow: hidden;
+
+            .closebtn{
+                display: none;
+            }
+            .fangdabtn{
+                display: block;
+            }
+        }
+        
+        .tabTitle{
+            border-bottom: 1px solid #c6e2fd;
+            margin:0 25px 0 29px;
+            height: 25px;
+            li{
+                float: left;
+                width:88px;
+                height: 25px;
+                line-height: 25px;                
+                margin-right: 8px;
+                font-size: 12px;
+                text-align: center;
+                border:1px solid #fff;
+                cursor: pointer;
+                
+                &.on{
+                    background: #051039;
+                    border-bottom:1px solid #052647;
+                    color: yellow;
+
+                }
+            }
+        }  
+        table{
+             width: auto;
+             margin:10px auto 0;
+             font-size: 0;
+        }
+        td{ font-size: 12px;}
+        .danwei{
+            top:50%;
+            right: 6px;
+            transform: translateY(-50%);
+        }
+        .td1{ width:100px; white-space: nowrap; text-align: right;}
+        .td2{ width:146px; white-space: nowrap;}
+        .td3{ width: 90px;  white-space: nowrap;text-align: right;}
+        .td4{ width: 188px; white-space: nowrap;}
+
+        .ipt_long1{ width:146px;}
+        .ipt_long2{ width:85px;}
+        .ipt_long3{ width:100%; }
+        .ipt_long4{ width:188px; }
+        .pr10{ padding-right: 10px; text-align: left;}
+        .pr20{ padding-right: 20px; text-align: left;}
+        .pr25{ padding-right: 25px; text-align: left;}
+        .pr30{ padding-right: 30px; text-align: left;}
+        .pr40{ padding-right: 40px; text-align: left;}
+        .pr50{ padding-right: 50px; text-align: left;}
+
+        .zuobiaobox{
+            .iconfont{
+                top:3px;
+                right: -20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    //污染源-弹出层- 添加内容
+    &.wuranyuanAddcont{
+        
+        .tabContent{
+            height: 300px;
+            margin-top:10px;
+            overflow: hidden;
+            position: relative;
+            .addbtn{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .zhiwenbox{
+            padding-top:16px;
+            margin:0px 31px 0 33px;
+            h3{height: 26px; line-height: 26px; font-size: 13px; color: #b9c4d4;}
+            .leftbar{
+                float: left;
+                width: 160px;                
+
+                .leftbarCont{
+                    height: 230px;
+                    overflow: auto;
+                    border:1px solid #c6e2fd;
+                    border-radius: 3px;
+                    color: #b9c4d4;
+                    font-size: 13px;
+                    padding:5px 0px;
+                    li{
+                        line-height: 20px;
+                        padding:0 5px;
+                        transition: .3s all;
+                        position:relative;
+                        font-size: 12px;
+                        p{
+                            padding-right: 45px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        span{
+                             font-size: 11px;
+                             position: absolute;
+                             top:0;
+                             right: 8px;
+                             font-size: 10px;
+                        }
+                        &:hover{
+                            background: #00a0e9;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .rightbar{
+                float: right;
+                width: 347px;
+                .rightbarCont{
+                    height: 230px;
+                    overflow: hidden;
+                    border:1px solid #c6e2fd;
+                    border-radius: 3px;
+                }
+            }
+        }
+            
+    }
+
+    //指纹图谱添加
+    &.zhiwenAddcont{
+        width: 600px;
+        height: 300px;
+        .td1{
+            width: 132px;
+            vertical-align: top;
+            white-space: nowrap;
+            
+        }
+        .td2{
+            width: 406px;  
+            input{
+                width: 406px;
+            } 
+            textarea{
+                width: 100%;
+                height: 90px;
+                resize: none;
+            }
+        }
+    }
+
+    //保存
+    &.saveCont{
+        width: 320px;
+        height: 150px;
+        .tanchuTitle{
+            text-align: left;
+            padding-left: 20px;
+        }
+        .tanchuContent{
+            text-align: center;
+        }
+        .mt30{
+            margin-top: 30px;
+        }
+    }
+
+    //删除确认框
+    &.delConfirmBox{
+        width: 350px;
+        height: 150px;        
+        .tanchuTitle{
+            text-align: left;
+            padding-left: 20px;
+        }
+        .tanchuContent{
+            text-align: center;
+            font-size: 14px;
+        }
+        .mt30{
+            margin-top: 30px;
+        }
+        .delbottomBtn{
+            position:absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            button{
+                display: inline-block;
+                margin:0 10px;
+            }
+        }
+    }
+}
+
+
+
+//溯源弹出层
+.suyuanmoxingcanshu,
+.echouCansu
+{
+    color: #191919;
+    text-align: center;
+    // padding:20px 20px;
+    
+}
+
+//添加敏感点
+.tanchuboxCont{
+    color: #191919;
+    text-align: center;
+    padding:20px 20px;
+    table{
+        width: 80%;
+        margin: 0 auto;
+        td{
+            padding: 5px 0;
+            &:nth-child(1){
+                 text-align: right;
+                 width: 20%;
+            }
+            &:nth-child(2){
+                text-align: left;
+                width: 80%;
+                input{
+                    width: 100%;
+                    height: 30px;
+                    text-indent: 6px;
+                    &.half{
+                        width: 50%;
+                    }
+                }
+                select{
+                    width: 50%;
+                    height: 30px;
+                }
+                textarea{
+                    width: 100%;
+                    height: 100px;
+                    padding:6px;
+                }
+
+            }
+        }
+    }
+    button{
+        padding: 3px 6px;
+        width: 120px;
+        height: 30px;
+        margin-top: 20px;        
+        background: #00a0e9;
+        border:0;
+        color: #fff;
+        transition: 0.3s all;
+        &:hover{
+            background:#00a0e9;
+        }
+    }
+}
+
+//指纹图谱
+.zhiwentupuNavCont{
+    
+    //左侧
+    .zhiwenLeftbar{
+        width: 320px;
+        position: fixed;
+        top:50px;
+        left: 18px;
+        bottom:23px;
+        background: #e6eaee;   
+        color: #052d59;    
+        padding:13px 0 18px 18px; 
+        box-sizing: border-box;
+        border-right:1px solid #cccccc;
+        .zhiwenTitle{
+            height: 33px;
+            line-height: 33px;
+            border-bottom:1px solid #052d59;
+            margin-right: 18px;
+            .icon-gubenjiegou{
+                font-weight: bold;
+                vertical-align: middle;
+                margin-right: 3px;
+            }
+            span{
+                vertical-align: middle;
+            }
+            .icon-add2{
+                float: right;
+                cursor: pointer;
+                color: #052647;
+                font-size: 16px;
+            }
+        }
+        .zhiwenLeftCont{
+            height: calc(~"100% - 40px");
+            overflow: auto;
+            margin-top:10px;
+            padding-right: 18px;
+            color:#164778;  
+            ul{                
+                li{
+                    line-height: 36px;
+                    height: 36px;
+                    font-size: 13px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    position: relative;
+                    transition: .3s all;
+                    padding-right: 40px;                    
+                    .iconfont{
+                        font-size: 20px;
+                        vertical-align: middle;
+                        position: absolute;
+                        cursor: pointer;
+                        color: #999;
+                        &.icon-xingxing{
+                            top:0;
+                            left: 0;
+                        }
+                        &.icon-shanchu{
+                           display: none;
+                            top:2px;
+                            right: 0px;
+                            cursor: pointer;
+                        }
+                        &.active{
+                            font-weight: bold;
+                            font-size: 22px;
+                            color:#13227a;
+                        }
+                    }
+                    span.txt{
+                        vertical-align: middle;
+                        display: block;
+                        cursor: pointer;
+                        margin:0 0 0 30px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        cursor: pointer;
+                        &.active{
+                            font-weight: bold;
+                            font-size: 20px;
+                            color:red;
+                        }
+                       
+                    }
+                    
+    
+                    
+                }                
+            }
+        }
+        
+    }
+    //右侧
+    .zhiwenRightBar{
+        position: fixed;
+        top:35px;
+        right: 18px;
+        bottom: 23px;
+        left:340px;
+        background: #fff;
+        box-sizing: border-box;
+        padding:30px 12px 10px 10px;
+        color: #083c70;
+
+        .listTitle{
+            height: 34px;
+            line-height: 34px;
+            color: #052d59;
+            i{ margin:0 10px 0 5px; font-size: 20px;}
+            span{
+                font-size: 16px;
+                font-weight: bold;
+               
+            }
+            .savebtn{
+                float: right;
+                background: #164778;
+                color: #fff;
+                width: 92px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-weight: normal;
+                border-radius: 3px;
+                transition: .3s all;
+                border:none;
+                cursor: pointer;
+                &:hover{
+                    background: #052647;
+                }
+                
+            }
+        }
+
+        .tablebox{
+            table{
+                width: 100%;
+                .td1{ width: 80px;}
+                .td2{ width: 150px;}
+                .td3{ width: 180px;}
+                .td4{ width: 150px}
+                .td5{ }
+            }
+            
+            &.tableTitle{
+                margin-top:15px;
+                td{                     
+                    text-align: center;
+                    height: 35px;
+                    background: #cdd5de;
+                    border:1px solid #cccccc;
+
+                }
+
+            }
+            &.tableContent{
+                height: calc(~"100% - 80px");
+                input[type="checkbox"]{
+                    width: 15px;
+                    height: 15px;
+                }
+                tr{
+                    &:hover{
+                        td{
+                            background: #e6eaee;
+                        }
+                    }
+                }
+                td{
+                    text-align: center;
+                    height: 38px;
+                    border: 1px solid #ccc;
+                }
+                p{ 
+                    padding: 0 10px;
+                }
+
+            }
+        }
+
+
+    }
+
+    .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+        background:rgba(27, 67, 94, 0.3) ;
+    }
+}
+
+//溯源模型
+.suyuanmoxingNavCont{
+    //左侧
+    .suyuanmoxingLeftbar{
+        width: 320px;
+        position: fixed;
+        top:50px;
+        left: 18px;
+        bottom:23px;
+        background: #e6eaee;   
+        color: #052d59;    
+        padding:13px 0 18px 18px; 
+        box-sizing: border-box;
+        border-right:1px solid #cccccc;
+        .zhiwenTitle{
+            height: 33px;
+            line-height: 33px;
+            border-bottom:1px solid #052d59;
+            margin-right: 18px;
+            .icon-xingxing{
+                font-weight: bold;
+                vertical-align: middle;
+                margin-right: 3px;
+            }
+            span{
+                vertical-align: middle;
+            }
+            .icon-add2{
+                float: right;
+                cursor: pointer;
+                color: #052647;
+                font-size: 16px;
+            }
+        }
+        .leftbarCont{
+            height: calc(~"100% - 40px");
+            overflow: auto;
+            margin-top:10px;
+            padding-right: 18px;
+            ol{                
+                
+                li{
+                    line-height: 36px;
+                    font-size: 14px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    position: relative;
+                    transition: .3s all;
+                    
+                    p{
+                        vertical-align: middle;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        margin-right: 80px;
+                    }
+                    .data{
+                        position: absolute;
+                        top:0;
+                        right: 0px;
+                        font-size: 11px;
+                        color: #666;
+                    }
+                    .iconfont{
+                        cursor: pointer;
+                    }
+                    
+                    &.active{
+                        
+                        
+                       
+                        p{
+                          font-weight: bold;  
+                          color:red;
+                          font-size: 18px;
+                        }
+                        .data{
+                            color: red;
+                        }
+                        &:hover{
+                            p{color: red;   }
+                            
+                        }
+                    }
+    
+                    
+                }
+                
+    
+            }
+        }
+
+        
+        
+    }
+    //右侧
+    .suyuanmoxingRightBar{
+        position: fixed;
+        top:35px;
+        right: 18px;
+        bottom: 23px;
+        left:340px;
+        background: #fff;
+        box-sizing: border-box;
+        padding:30px 12px 10px 10px;
+        color: #083c70;
+
+        .listTitle{
+            height: 34px;
+            line-height: 34px;
+            color: #052d59;
+            i{ margin:0 10px 0 5px; font-size: 20px;}
+            span{
+                font-size: 16px;
+                font-weight: bold;
+               
+            }
+            .savebtn{
+                float: right;
+                background: #164778;
+                color: #fff;
+                width: 92px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-weight: normal;
+                border-radius: 3px;
+                transition: .3s all;
+                border:none;
+                cursor: pointer;
+                &:hover{
+                    background: #052647;
+                }
+                
+            }
+        }
+
+        .tablebox{
+            table{
+                width: 100%;
+                td{
+                    border:1px solid #ccc;
+                }
+                .td1{ width: 45px;}
+                .td2{ width: 15%;}
+                .td3{ width: 90px;}
+                .td4{ width: 90px;}
+                .td5{  width: 15%; }
+                .td6{ width: 10%;  }
+                .td7{  width: 10%; }
+                .td8{  }
+                .td9{ width: 70px;  }
+                .td10{ width: 50px;  }
+            }
+            
+            &.tableTitle{
+                margin-top:15px;
+                td{                     
+                    text-align: center;
+                    height: 35px;
+                    background: #cdd5de;
+                    border-top:1px solid #cccccc;
+                    border-bottom: 1px solid #cccccc;
+                }
+
+            }
+            &.tableContent{
+                height: calc(~"100% - 80px");
+
+                input[type="checkbox"]{
+                    width: 15px;
+                    height: 15px;
+                }
+                tr{
+                    &:hover{
+                        td{
+                            background: #e6eaee;
+                        }
+                    }
+                }
+                td{
+                    text-align: center;
+                    height: 38px;
+                    border-bottom: 1px solid #ccc;
+
+                    p{
+                        padding: 0 10px;
+                    }
+                    .iconfont{
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+        background:rgba(27, 67, 94, 0.3) ;
+    }
+}
+
+//表格样式
+.boxTable{  
+    
+    th,td{         
+        border-color:#c2c2c2!important;
+        text-align: center;
+    }
+    
+}
+
+.layui-layer-dialog .layui-layer-content{
+    color: #333;
+}
+
+//适配小屏
+@media screen and (max-width:1366px){
+    //首页底部框适配
+    .indexLeftBar{
+        left: 30px;
+    }
+    .indexRightBar{
+        right: 30px;
+    }
+    .indexLeftBar,.indexRightBar{
+        width: 300px;
+    }
+    .indexBottomBar{
+        left: 340px;
+        right: 340px;
+    }
+
+    //敏感点
+    .minganBox{    
+        .tablebox{        
+            .data{ width:75px; font-size: 10px;}
+            .name { width: 100px; }        
+        }
+    }
+
+    //污染源\污染物信息
+    .wuranwuBox{
+        .tablebox{     
+            width: 100%;   
+            .td1{ width: 100px;}
+            .td2{ width: 100px;}
+        }
+    }
+
+    
+
+    //mkbox块
+    .mkbox{
+        .mkTitle_jiao{
+            padding: 0 55px 0 10px;
+        }
+    }
+    
+    //浮块
+    .floatDiv{
+        height: 30px;
+        line-height: 28px;
+        li{
+            padding:0 20px;
+        }
+    }
+
+    //四周框架适配
+    .borderwarp{
+        .mk2{
+            width: 60%;
+        }
+        .nav{
+            right: 42%;
+            li{
+                padding: 0 10px;
+            }
+        }
+    }
+
+
+
+
+    //五星和二星
+    .wuxingbox,.rightXingbox{
+        width: 125px;
+        &.rightXingPos{
+            right: 340px;
+            bottom:35px;
+        }
+    }
+
+
+
+    //进度条
+    .progress{
+        margin:9% 20px 0;
+        height: 14px;
+        .progress-bar{
+            height: 8px;
+        }
+
+    }
+
+    
+}
+
+
+//宽度小于
+@media screen and (max-width:1200px){
+    .indexBottomBar{
+        height: 0;
+        overflow: hidden;
+    }
+    .wuxingpos{
+        bottom: 35px!important;
+
+    }
+}
+
+//高度较少时
+@media screen and (max-height:800px){
+
+    //五星和二星
+    // .wuxingbox,.rightXingbox{
+    //     width: 125px;
+    //     &.rightXingPos{
+    //         right: 340px;
+    //         bottom:35px;
+    //     }
+    // }
+
+    //首页-第二个模块
+
+    .mkbox{
+        .mkContent{
+            .divstylebox {
+                .divstyle{
+                    h5{
+                        font-size: 68px;
+
+                    }       
+                    li{
+                        font-size: 12px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    //进度条
+    .progress{
+        margin:9% 20px 0;
+        height: 14px;
+        .progress-bar{
+            height: 8px;
+        }
+
+    }
+
+    //底部
+    .suyuanHistroyBox,
+    .suyuanResultBox{
+        height: 250px;
+    }
+
+}
+
+
+.scrolldiv{
+    overflow: hidden!important;
+}
